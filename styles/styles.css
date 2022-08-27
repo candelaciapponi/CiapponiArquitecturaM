@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* MOBILE FIRST Comienza !! */
+
+.container {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "cuerpo cuerpo"
+    "cuerpoDer cuerpoDer"
+    "descripcion descripcion"
+    "footer footer";
+    grid-template-rows: 200px 2300px 500px 1000px 200px;
+    grid-template-columns: 100%;
+    height: 100vh;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+  
+/* header comienzA !! */
+header {
+    background-color: green;
+    grid-area: header;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 0px;
+    width: 90 px;
+    height: 90px;
+}
+
+.navList {
+    display: flex;
+    justify-content: flex-end;  
+    text-align: end;
+    list-style: none;  
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+header ul li {
+    display: inline;
+    padding-right: 1px;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+
+header a:hover {
+    color: #86895d;
+}
+  
+
+#ulLargerText {
+    font-size: 30px;
+    color: #86895d;
+}
+
+/* header termina */
+
+
+/* article "cuerpo" comienza !! */
+
+
+.positionButton {
+    display: flex;
+    justify-content: flex-end;
+    width: 180px;
+    height: 50px;
+    background-color: #b3ba56;
+    position: fixed;
+    bottom: 60px;
+    right: 7px;
+    color: rgb(9, 55, 2);
+    font-weight: bold;
+    padding: 5px 2px 5px 0px;
+    font-size: 24px;
+    text-decoration: none;
+    text-align: left;
+    text-align: center;
+}
+
+.positionButton:hover {
+    width: 190px;
+    height: 40px;
+    padding-top: 10px;
+    padding-right: 20px;
+    animation-name: pbutton;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+
+}
+
+@keyframes pbutton {
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+    0% {background-color: rgb(4, 88, 31);}
+    50% {background-color: rgb(5, 83, 17); transform: scale(1, 1);}
+    75% {background-color: rgb(9, 76, 53); transform: rotate(4deg);}
+    75% {color: aliceblue};
+}
+
+
+article#cuerpo {
+    grid-area: cuerpo;
+    display: grid;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: pink;
+
+}
+
+.indexImg {
+    padding-bottom: 100px;
+    height: 650px;
+    width: 1100px;
+}
+
+
+/* Article "cuerpo" TERMINa */
+
+
+/* aside "cuerpoDer" comienza !!  */
+
+aside {
+    background-color: darkorange;
+    grid-area: cuerpoDer;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 50px;
+}
+
+
+.sideBarText {
+    padding-top: 140px;
+    padding-bottom: 30px;
+    padding-left: 35px;
+}
+
+.sideBarText1 {
+    padding-bottom: 20px;
+    padding-left: 120px;
+}
+
+.sideBarText2 {
+    padding-bottom: 20px;
+    padding-left: 370px;
+}
+
+
+
+/* aside termina */
+
+  
+
+/*  descripcion comienza !!  */
+
+section#descripcion {
+    background-color: brown;
+    grid-area: descripcion;
+}
+
+
+.descrip {
+    text-align: center;
+    padding-top: 20px;
+    height: 950px;
+}
+
+.descripTitulo {
+    font-size: 80px;
+    padding-bottom: 170px;
+    padding-top: 170px;
+}
+
+.descripTexto {
+    font-size: 35px;
+    padding-bottom: 50px;
+}
+  
+.descripTexto1 {
+    font-size: 35px;
+    padding-bottom: 100px;
+
+}
+
+.descripTexto2 {
+    font-size: 35px;
+    padding-bottom: 200px;
+
+}
+  
+  /* descripcion termina */
+
+
+
+  /* footer comienzA !! */
+
+footer {
+    background-color: bisque;
+    grid-area: footer;
+    font-size: 30px;
+    height: 240px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+
+}
+
+.footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer ul li {
+    display: inline;
+    padding-right: 1px;
+    justify-content: space-between;
+    padding-left: 40px;
+}
+
+.footer a:hover {
+    color: #86895d;
+}
+  
+  /* footer termina */
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 750px) {
+.container {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "cuerpo cuerpoDer"
+    "descripcion descripcion"
+    "footer footer";
+    grid-template-rows: 200px 2400px 1000px 180px;
+    grid-template-columns: 75% 25%;
+    height: 100vh;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}  
+
+
+
+.positionButton {
+    display: flex;
+    justify-content: flex-end;
+    width: 180px;
+    height: 40px;
+    background-color: #b3ba56;
+    position: fixed;
+    bottom: 60px;
+    right: 7px;
+    color: rgb(9, 55, 2);
+    font-weight: bold;
+    padding: 5px 2px 2px 0px;
+    font-size: 24px;
+    text-decoration: none;
+    text-align: left;
+    text-align: center;
+}
+
+
+.sideBar0 {
+    font-size: 30px;  
+}
+
+aside {
+    background-color: darkorange;
+    grid-area: cuerpoDer;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 50px;
+    /* width: 300px; */
+}
+
+.sideBarText {
+    padding-top: 700px;
+    padding-bottom: 800px;
+    padding-left: 35px;
+}
+
+.sideBarText1 {
+    padding-bottom: 10px;
+    padding-left: 120px;
+}
+
+.sideBarText2 {
+    padding-top: 400px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+} 
+
+
+.descrip {
+    font-size: 104px;
+}
+
+.descripTexto {
+    font-size: 40px;
+    padding-bottom: 50px;
+}
+  
+.descripTexto1 {
+    font-size: 40px;
+    padding-bottom: 100px;
+
+}
+
+.descripTexto2 {
+    font-size: 40px;
+    padding-bottom: 200px;
+
+}
+
+footer {
+    background-color: pink;
+    grid-area: footer;
+    font-size: 20px;
+    height: 200px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding-bottom: 10px;
+
+}
+}
+  
+
+/* TERMINA INDEX */
