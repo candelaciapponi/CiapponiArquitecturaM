@@ -10,31 +10,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap" rel="stylesheet">
-    <!-- Bootstrap  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- styles boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- styles css -->
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
-    <section class="containerQS">
-        <!-- <section class="container-fluid">-->
-        <header class="header">
-                <div>
+    <section class="container-fluid">   
+        <header>       
+            <nav class="navbar navbar-expand-lg navbar-light pt-2 pb-5">
+                <div class="container-fluid">
                     <div>
-                    <a href="index.html" alt="logo ArquitecturaM" class="logo"><img src="../images/logo.png" height="90px"></a>
+                        <a href="../index.html" alt="logo ArquitecturaM" class="logo"><img src="/images/logo.png"></a>
                     </div>
-            
-                    <div class="navList">
-                        <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="./pages/departamentos.html">Departamentos</a></li>
-                        <li><a href="./pages/casas.html">Casas</a></li>
-                        <li><a href="./pages/otrosproyectos.html">Otros Proyectos</a></li>
-                        <li><b id="ulLargerText">Quienes somos</b></li>
-                        <li><a href="./pages/contacto.html">Contacto</a></li>
+                    <div class="nav-item dropdown pe-5">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Quienes Somos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="/index.html">Inicio</a></li>
+                        <li><a class="dropdown-item" href="departamentos.html">Departamentos</a></li>
+                        <li><a class="dropdown-item" href="casas.html">Casas</a></li>
+                        <li><a class="dropdown-item" href="otrosproyectos.html">Otros Proyectos</a></li>
+                        <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
                         </ul>
-                    </div>      
-                </div>    
+                    </div>
+                </div>                                   
+            </nav>
+            </div>     
         </header>
                         
         <article class="cuerpoQ1">
@@ -43,11 +46,11 @@
             </div>
         
             <div class="quienesArt">      
-            <h1 class="quienesTitulo">Somos</h1>
+            <h1 class="quienesTitulo">Somos...</h1>
 
             <p class="quienesDesc">
-                Somos un grupo de personas que se reunen para brindar servicios de construcción susentable mientras tomamos mate.
-                Cubrimos todas las etapas. Desde el diseño hasta la decoración final.
+                ... un grupo de personas que se reunen para brindar servicios de construcción susentable mientras tomamos mate.
+                Cubrimos todas las etapas, desde el diseño hasta la decoración final.
             </p>                   
             </div>
         </article>
@@ -57,28 +60,36 @@
         <div class="quienesArt">      
             <h1 class="filoTitulo">Filosofía Minimal</h1>
 
-            <p class="filoDesc">
-                Ludwig Mies Van Der Rohe, arquitecto y diseñador industrial alemán nacido a finales del siglo XIX, fue el pionero de la
-                arquitectura moderna. Estructuró su trabajo en la búsqueda de un nuevo estilo arquitectónico que representara los tiempos modernos
-                y se atrevió a romper la corriente ecléctica, proponiendo un estilo minimalista. Claridad y sencillez fueron los principios clave de su propuesta. La creación de espacios abiertos en dónde fluyera el aire y dónde se pudiera circular sin obstáculos, fue la base de su célebre frase “menos es más”. Cuando hablamos de Mies, y buscamos entender su concepto a través de su trabajo, nos remitimos directamente al Pabellón Alemán de Barcelona, una de sus propuestas más importantes enmarcada en la exposición Internacional de Barcelona en el año 1929.    
-            </p>                   
+            <div class="filoDesc">
+                <p>
+                Ludwig Mies Van Der Rohe fue el pionero de la arquitectura moderna. Estructuró su trabajo en la búsqueda de un nuevo estilo arquitectónico que representara los tiempos modernos
+                rompienso la corriente ecléctica y proponiendo un estilo minimalista. 
+                </p>
+                <p class="pt-5">
+                Claridad y sencillez fueron los principios clave de su propuesta. La creación de espacios abiertos en dónde fluyera el aire y dónde se pudiera circular sin obstáculos, fue la base de su célebre frase “menos es más”. Cuando hablamos de Mies, y buscamos entender su concepto a través de su trabajo, nos remitimos directamente al Pabellón Alemán de Barcelona, una de sus propuestas más importantes enmarcada en la exposición Internacional de Barcelona en el año 1929.    
+                </p>
+            </div>                   
         </div>
 
         </section>
 
-        <div class="quienesImg">
-        <img src="../images/quienessomos.png" alt="Imagen de Ludwig Mies Van Der Rohe" >
+        <div class="quienesImg col-12 container-fluid">
+        <img src="../images/quienessomos.png" alt="Imagen de Ludwig Mies Van Der Rohe" class="img-fluid">
         </div>
     
 
         <footer class="footer">
-            <ul>
-            <li><a href=#>Terminos y Condiciones</a></li>
-            <li><a href=#>Trabaja en nuestro equipo</a></li>
-            <li><a href=#>Ayuda</a></li>
-            <li><a href=#>Latam 2022</a></li>
-            </ul>
-        </footer>
+            <nav class="row navbar navbar-light bg-black pt-5">
+                <div class="col-12 container-fluid">
+                    <ul>                
+                        <li><a href=#>Terminos y Condiciones</a></li>
+                        <li><a href=#>Trabaja en nuestro equipo</a></li>
+                        <li><a href=#>Ayuda</a></li>
+                        <li><a href=#>Latam 2022</a></li>
+                    </ul>
+                </div>
+            </nav>                        
+        </footer>  
     </section>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

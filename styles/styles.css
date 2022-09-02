@@ -30,45 +30,38 @@ body {
     height: 100vh;
 }
 
-
 /*  header comienzA !! */
+
+
 
 header {
     grid-area: header;
+    font-size: 30px;
 }
 
 .logo {
     display: flex;
     justify-content: flex-start;
     margin-left: 0px;
-    width: 90 px;
-    height: 90px;
+    width: 150 px;
+    height: 150px;
 }
 
-.navList {
-    display: flex;
-    justify-content: flex-end;  
-    text-align: end;
-    list-style: none;  
-    margin-right: 20px;
-    font-size: 25px;
+.nav-link {
+    color: rgb(64, 79, 6) !important;
 }
 
-header a {
-    text-decoration: none;
-    color: inherit;
-}
-
-
-header ul li {
-    display: inline;
-    padding-right: 1px;
-    justify-content: space-between;
-    padding-left: 20px;
+.dropdown-menu {
+    /* color: white !important;  NO puedo cambiar el color de letra
+    quisiera que el BG sea negro y las letras blancas.  */
+    background-color: olive;
+    font-size: 23px;
 }
 
 header a:hover {
-    color: #86895d;
+    font-size: 23px;
+    background-color: black !important;
+    color: white !important;
 }
   
 
@@ -77,10 +70,7 @@ header a:hover {
     color: #86895d;
 }
 
-/* header termina */
 
-
-/* article "cuerpo" comienza !! */
 
 
 .positionButton {
@@ -102,15 +92,19 @@ header a:hover {
 }
 
 .positionButton:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
     width: 190px;
     height: 40px;
     padding-top: 10px;
-    padding-right: 20px;
+    padding-right: 10px;
     animation-name: pbutton;
-    animation-duration: 3s;
+    animation-duration: 6s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
-
 }
 
 @keyframes pbutton {
@@ -150,6 +144,11 @@ aside {
     font-size: 50px;
 }
 
+.sideBar0 {
+    font-size: 25px;
+
+}
+
 
 .sideBarText {
     padding-top: 140px;
@@ -164,7 +163,7 @@ aside {
 
 .sideBarText2 {
     padding-bottom: 20px;
-    padding-left: 370px;
+    padding-left: 210px;
 }
 
 /* aside termina */
@@ -174,6 +173,7 @@ aside {
 
 section#descripcion {
     grid-area: descripcion;
+    padding-top: 200px;
 }
 
 
@@ -185,25 +185,20 @@ section#descripcion {
 
 .descripTitulo {
     font-size: 80px;
-    padding-bottom: 170px;
-    padding-top: 170px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .descripTexto {
-    font-size: 35px;
-    padding-bottom: 50px;
+    font-size: 40px;
 }
   
 .descripTexto1 {
-    font-size: 35px;
-    padding-bottom: 100px;
-
+    font-size: 40px;
 }
-
+  
 .descripTexto2 {
-    font-size: 35px;
-    padding-bottom: 200px;
-
+    font-size: 40px;
 }
   
   /* descripcion termina */
@@ -318,7 +313,7 @@ aside {
   
 .descripTexto1 {
     font-size: 40px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 
 }
 
@@ -344,10 +339,23 @@ footer {
 /* TERMINA INDEX */
 
 
+/* Empieza Casas */
+
+.imgCasas {
+    width: 1100px;
+    height: 600px;
+}
+
+.tituloCasas {
+    display: flex;
+    justify-content: center;
+}
 
 
+/* TERMINA Casas */
 
-/*  quienes somos quienes somos quienes somos  */
+
+/*  quienesSomos.html COMIENZA*/
 
 .containerQS {
     display: grid;
@@ -373,12 +381,13 @@ footer {
 
 .quienesTitulo {
     font-size: 80px;
-    padding-top: 180px;    
+    padding-top: 100px;    
 }
 
 .quienesDesc {
-    font-size: 40px;
-    padding-top: 100px;
+    font-size: 35px;
+    padding-top: 80px;
+    padding-bottom: 70px;
 }
 
 .cuerpoQ2 {
@@ -390,34 +399,63 @@ footer {
 
 .filoTitulo {
     font-size: 40px;
-    padding-top: 40px;    
+    padding-top: 140px;    
     padding-left: 50px;
-
+    color: #595957;
 }
 
 .filoDesc {
     font-size: 30px;
-    padding-top: 80px;    
+    padding-top: 60px;    
+    line-height: 1.8;
+    color: rgb(103, 101, 101);
 }
 
 
 .quienesImg {
-    padding-top: 150px;
-    padding-left: 700px;
-    padding-bottom: 100px;
-    display: flex;
-    justify-content: center;
-    /* Pude ubicar la imagen en el centro unicamente con el padding left, No con el justify content no se por que */
+    padding-top: 70px;
     width: 600px;
     height: 600px;
 }
 
 .footer {
     grid-area: footer;
-    font-size: 30px;
-    height: 140px;
+    font-size: 20px;
+    height: 180px;
     display: flex;
     justify-content: center; 
     align-items: center;
 }
 
+
+/*  quienesSomos.html TERMINA*/
+
+
+
+/* OtrosProyectos.html COMIENZA*/
+
+.blockquote {
+    font-size: 3em;
+}
+
+.lead {
+    font-size: 2em;
+    color: #8d8d8a;
+}
+
+/* OtrosProyectos.html TERMINA*/
+
+
+
+/* Contactos.html COMIENZA*/
+
+form {
+    font-size: 25px;
+}
+
+#text-area {
+    width: 500px;
+    height: 200px;
+}
+
+/* Contactos.html TERMINA*/
