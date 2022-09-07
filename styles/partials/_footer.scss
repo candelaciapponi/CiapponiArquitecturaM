@@ -1,0 +1,39 @@
+// No se como hacer para centrar los items
+
+
+.footer {   
+    padding-top: 100px;   
+    background-color: $background-primary-color;    
+    font-size: 1.5em;
+    height: 220px;
+
+    .navbar {
+      
+        .container-fluid {
+            display: flex;
+            justify-content: center;
+            justify-content: space-evenly;            
+            
+            .footerObjetos {               
+                li {        
+                    display: inline;
+                    justify-content: space-between;
+                    padding-left: 60px;
+                    font-size: 1em;
+
+                    a {
+                        text-decoration: none;
+                        color: inherit;
+                
+                        &:hover {
+                            color: olive;
+                        }
+                    }
+                }
+            }            
+        }
+    }    
+} 
+
+
+

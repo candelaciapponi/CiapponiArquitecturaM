@@ -1,0 +1,53 @@
+
+/*  quienesSomos.html COMIENZA*/
+
+.articleQuienes {
+    display: flex;
+    background-color: $background-primary-color;
+    justify-content: center;
+    text-align: center;
+
+    .quienesTitulo {
+        font-size: 80px;
+        padding-top: 100px;   
+    }
+    .quienesDesc {
+        font-size: 35px;
+        padding-top: 80px;
+        padding-bottom: 70px;
+    }   
+}
+
+
+.sectionQuienes {
+    background-color: $background-primary-color;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+    .filoTitulo {
+        font-size: 40px;
+        padding-top: 140px;    
+        padding-left: 50px;
+        color: #595957;
+    }
+    
+    .filoDesc {
+        font-size: 30px;
+        padding-top: 60px;    
+        line-height: 1.8;
+        color: rgb(103, 101, 101);
+    }    
+}
+
+.quienesImagen {
+    background-color: $background-primary-color;
+    .quienesImg {    
+        padding-top: 70px;
+        width: 600px;
+        height: 600px;
+    }
+}
+
+

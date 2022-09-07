@@ -1,0 +1,39 @@
+.header {
+    grid-area: header;
+    font-size: 30px;
+    background-color: $background-primary-color;
+
+    .navbar {
+        .logo {
+            display: flex;
+            justify-content: flex-start;
+            margin-left: 0px;
+            width: 150 px;
+            height: 150px;
+        }
+                
+        font-size: 1em;
+        .nav-link {
+            color: rgb(64, 79, 6) !important;
+        }
+        
+        .nav-item {
+            padding-left: 70px;
+            .dropdown-menu {
+                background-color: black;
+
+                font-size: 1.2em;
+            }
+            & a:hover {
+                background-color: black !important;
+                color: rgb(100, 100, 10);
+                font-weight: bold;
+            }
+            .dropdown-item {
+                color: white;
+            }
+        }
+    }
+}
+
+

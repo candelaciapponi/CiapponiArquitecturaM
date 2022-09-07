@@ -1,0 +1,13 @@
+@mixin botones($textColor, $bgcolor, $border-color) {
+    padding: 11px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    border-color: $border-color;
+    font-size: 1em;
+    color: $textColor;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    background-color: $bgcolor;
+}

@@ -1,0 +1,141 @@
+html {
+    min-height: 100%;
+}
+
+// .containerIndex{
+//     display: grid;
+//     min-height: 100%;
+//     grid-template-areas:
+//     "header"
+//     "articleIndex"
+//     "asideIndex"
+//     "sectionIndex"
+//     "botonesDiv"
+//     "footer";
+// }   
+
+// .header {
+//     grid-area: header;
+// }
+// .articleIndex {
+//     grid-area: articleIndex;
+// }
+
+// .asideIndex {
+//     grid-template-areas: asideIndex;
+//     justify-content: center;
+//     align-items: center;
+//     height: auto;
+// }
+
+// .sectionIndex {
+//     grid-area: sectionIndex;;
+// }
+
+// .botonesDiv {
+//     grid-area: botonesDiv;
+// }
+
+// .footer {
+//     grid-area: footer;
+// }
+
+
+@media screen (min-width: 760px) {
+    .containerIndex {        
+
+        .articleIndex {
+            background-color: red;
+
+            .indexCuerpo { 
+                .sideBar0 {
+                    font-size: 1.8rem;
+                    padding-top: 550px;
+                    color: blue;
+                    
+                    .sideBarText {
+                    padding-bottom: 800px;
+                    }
+
+                    .sideBarText1 {
+                        padding-top: 120px;
+                        padding-bottom: 800px;
+                    }        
+                }
+
+                .imagenesCuerpo {                  
+                    .indexImg {
+                        padding-bottom: 100px;
+                        height: 500px;
+                        width: 100%;
+                    }                                          
+                }            
+            }
+            
+            .sideBar0 {
+                font-size: 1.4rem; 
+                background-color: red;        
+                color: red;
+                padding-bottom: 100px;
+                padding-top: 100px;
+                text-align: center;
+        
+                    .sideBarText {
+                        padding-bottom: 50px;                
+                        padding-left: 70%;             
+                    }    
+                
+                    .sideBarText1 {
+                        padding-bottom: 50px;   
+                        padding-left: 40%;             
+                    }
+                    
+                    .sideBarText2 {
+                    } 
+            }    
+        } 
+    }
+}
+
+    
+    
+            
+//         // grid-template:        
+//         // "header       header" 100px
+//         // "articleIndex asideIndex" 400px
+//         // "sectionIndex sectionIndex" 300px
+//         // "botonesDiv   botonesDiv" 200px
+//         // "footer       footer" 400px; 
+//         // 600px         auto;
+   
+
+
+//   
+//         .botonesDiv {                    
+//             padding-top: 200px;
+//             height: auto;
+
+//             a {
+//                 color: olive;
+//             }
+//         }
+
+//         .articleIndex {
+//             .indexCuerpo {
+//                 height: auto;                 
+//                 .imagenesCuerpo {   
+//                     .indexImg {
+//                         padding-bottom: 100px;
+//                         height: 650px;
+//                         width: 100%;
+//                     }                                                       
+//                 }            
+//             }     
+//         }
+       
+     
+//         .asideIndex {
+//             font-size: 4em;                                    
+//         }     
+//     }
+// }

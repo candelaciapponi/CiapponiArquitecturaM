@@ -1,3 +1,13 @@
+@import 
+    "./partials/variables",
+    "./partials/generales",
+    "./partials/colors",
+    "./partials/displays",
+    "./partials/header",
+    "./partials/footer",
+    "./partials/index",
+    "./partials/quienessomos";
+    
 *{
     margin: 0;
     padding: 0;
@@ -15,7 +25,7 @@ body {
     min-height: 100%;
     min-width: 100%;
     padding: 0px 0px 0px 0px;
-    background-color: black;
+    background-color: black;    
 }
 .container {
     display: grid;

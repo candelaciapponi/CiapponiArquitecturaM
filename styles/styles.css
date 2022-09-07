@@ -3,9 +3,6 @@
   padding: 0;
 }
 
-/* MOBILE FIRST      //
-
-INDEX     INDEX      INDEX    */
 body {
   font-family: "Edu NSW ACT Foundation", cursive;
   color: rgb(216, 216, 216);
@@ -13,57 +10,12 @@ body {
   min-height: 100%;
   min-width: 100%;
   padding: 0px 0px 0px 0px;
-  background-color: black;
-}
-
-.container {
-  display: grid;
-  grid-template-areas: "header header" "cuerpo cuerpo" "cuerpoDer cuerpoDer" "descripcion descripcion" "footer footer";
-  grid-template-rows: 200px 2300px 500px 1000px 200px;
-  grid-template-columns: 100%;
-  height: 100vh;
-}
-
-/*  header comienzA !! */
-header {
-  grid-area: header;
-  font-size: 30px;
-}
-
-.logo {
-  display: flex;
-  justify-content: flex-start;
-  margin-left: 0px;
-  width: 150 px;
-  height: 150px;
-}
-
-.nav-link {
-  color: rgb(64, 79, 6) !important;
-}
-
-.dropdown-menu {
-  /* color: white !important;  NO puedo cambiar el color de letra
-  quisiera que el BG sea negro y las letras blancas.  */
-  background-color: olive;
-  font-size: 23px;
-}
-
-header a:hover {
-  font-size: 23px;
-  background-color: black !important;
-  color: white !important;
-}
-
-#ulLargerText {
-  font-size: 30px;
-  color: #86895d;
 }
 
 .positionButton {
   display: flex;
-  justify-content: flex-end;
-  width: 180px;
+  justify-content: center;
+  width: 200px;
   height: 50px;
   background-color: #b3ba56;
   position: fixed;
@@ -76,17 +28,14 @@ header a:hover {
   text-decoration: none;
   text-align: left;
   text-align: center;
+  border-radius: 17px;
 }
-
 .positionButton:hover {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   font-weight: bold;
-  width: 190px;
-  height: 40px;
-  padding-top: 10px;
   padding-right: 10px;
   -webkit-animation-name: pbutton;
           animation-name: pbutton;
@@ -139,271 +88,328 @@ header a:hover {
     color: aliceblue;
   }
 }
-article#cuerpo {
-  grid-area: cuerpo;
-  display: grid;
-  height: auto;
-  padding-top: 100px;
-  padding-bottom: 100px;
+html {
+  min-height: 100%;
 }
 
-.indexImg {
-  padding-bottom: 100px;
-  height: 650px;
-  width: 1100px;
-}
-
-/* Article "cuerpo" TERMINa */
-/* aside "cuerpoDer" comienza !!  */
-aside {
-  grid-area: cuerpoDer;
-  padding-top: 10px;
-  padding-left: 10px;
-  font-size: 50px;
-}
-
-.sideBar0 {
-  font-size: 25px;
-}
-
-.sideBarText {
-  padding-top: 140px;
-  padding-bottom: 30px;
-  padding-left: 35px;
-}
-
-.sideBarText1 {
-  padding-bottom: 20px;
-  padding-left: 120px;
-}
-
-.sideBarText2 {
-  padding-bottom: 20px;
-  padding-left: 210px;
-}
-
-/* aside termina */
-/*  descripcion comienza !!  */
-section#descripcion {
-  grid-area: descripcion;
-  padding-top: 200px;
-}
-
-.descrip {
-  text-align: center;
-  padding-top: 20px;
-  height: 950px;
-}
-
-.descripTitulo {
-  font-size: 80px;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-.descripTexto {
-  font-size: 40px;
-}
-
-.descripTexto1 {
-  font-size: 40px;
-}
-
-.descripTexto2 {
-  font-size: 40px;
-}
-
-/* descripcion termina */
-/* footer comienzA !! */
-footer {
-  background-color: black;
-  grid-area: footer;
-  font-size: 30px;
-  height: 240px;
-  display: flex;
+.containerIndex .botonesDiv .botonesTodos .btn3, .containerIndex .botonesDiv .botonesTodos .btn2, .containerIndex .botonesDiv .botonesTodos .btn1 {
+  padding: 11px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 40px;
+  border-color: rgb(160, 160, 77);
+  font-size: 1em;
+  display: inline;
   justify-content: center;
   align-items: center;
 }
 
-.footer a {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Edu NSW ACT Foundation", cursive;
+  color: rgb(216, 216, 216);
+  /*font-size: 1.2rem needed;*/
+  min-height: 100%;
+  min-width: 100%;
+  padding: 0px 0px 0px 0px;
+}
+
+.positionButton {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  background-color: #b3ba56;
+  position: fixed;
+  bottom: 60px;
+  right: 7px;
+  color: rgb(9, 55, 2);
+  font-weight: bold;
+  padding: 5px 2px 5px 0px;
+  font-size: 24px;
+  text-decoration: none;
+  text-align: left;
+  text-align: center;
+  border-radius: 17px;
+}
+.positionButton:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  padding-right: 10px;
+  -webkit-animation-name: pbutton;
+          animation-name: pbutton;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+@keyframes pbutton {
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  0% {
+    background-color: rgb(4, 88, 31);
+  }
+  50% {
+    background-color: rgb(5, 83, 17);
+    transform: scale(1, 1);
+  }
+  75% {
+    background-color: rgb(9, 76, 53);
+    transform: rotate(4deg);
+  }
+  75% {
+    color: aliceblue;
+  }
+}
+.header {
+  grid-area: header;
+  font-size: 30px;
+  background-color: rgb(0, 0, 0);
+}
+.header .navbar {
+  font-size: 1em;
+}
+.header .navbar .logo {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 0px;
+  width: 150 px;
+  height: 150px;
+}
+.header .navbar .nav-link {
+  color: rgb(64, 79, 6) !important;
+}
+.header .navbar .nav-item {
+  padding-left: 70px;
+}
+.header .navbar .nav-item .dropdown-menu {
+  background-color: black;
+  font-size: 1.2em;
+}
+.header .navbar .nav-item a:hover {
+  background-color: black !important;
+  color: rgb(100, 100, 10);
+  font-weight: bold;
+}
+.header .navbar .nav-item .dropdown-item {
+  color: white;
+}
+
+.footer {
+  padding-top: 100px;
+  background-color: rgb(0, 0, 0);
+  font-size: 1.5em;
+  height: 220px;
+}
+.footer .navbar .container-fluid {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.footer .navbar .container-fluid .footerObjetos li {
+  display: inline;
+  justify-content: space-between;
+  padding-left: 60px;
+  font-size: 1em;
+}
+.footer .navbar .container-fluid .footerObjetos li a {
   text-decoration: none;
   color: inherit;
 }
+.footer .navbar .container-fluid .footerObjetos li a:hover {
+  color: olive;
+}
 
-.footer ul li {
+.containerIndex {
+  min-width: 100%;
+}
+.containerIndex .articleIndex {
+  background-color: rgb(0, 0, 0);
+  font-size: 2em;
+  text-align: center;
+}
+.containerIndex .articleIndex .indexCuerpo .imagenesCuerpo .indexImg {
+  padding-bottom: 100px;
+  height: 500px;
+  width: 100%;
+}
+.containerIndex .articleIndex .indexCuerpo .sideBar0 {
+  font-size: 1.4rem;
+  background-color: rgb(0, 0, 0);
+  color: olive;
+  padding-bottom: 100px;
+  padding-top: 100px;
+  text-align: center;
+}
+.containerIndex .articleIndex .indexCuerpo .sideBar0 .sideBarText {
+  padding-bottom: 50px;
+  padding-left: 70%;
+}
+.containerIndex .articleIndex .indexCuerpo .sideBar0 .sideBarText1 {
+  padding-bottom: 50px;
+  padding-left: 40%;
+}
+.containerIndex .sectionIndex {
+  background-color: rgb(0, 0, 0);
+  height: auto;
+  padding-bottom: 150px;
+  padding-top: 150px;
+}
+.containerIndex .sectionIndex .descrip {
+  text-align: center;
+  padding-top: 20px;
+}
+.containerIndex .sectionIndex .descrip .descripTitulo {
+  font-size: 80px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.containerIndex .sectionIndex .descrip .descripTexto {
+  font-size: 40px;
+}
+.containerIndex .sectionIndex .descrip .descripTexto1 {
+  font-size: 40px;
+}
+.containerIndex .sectionIndex .descrip .descripTexto2 {
+  font-size: 40px;
+}
+.containerIndex .botonesDiv {
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  height: auto;
+  width: auto;
+  padding-bottom: 150px;
+  padding-top: 150px;
+}
+.containerIndex .botonesDiv .botonesTodos {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  font-weight: bold;
+}
+.containerIndex .botonesDiv .botonesTodos .btn1 {
+  background-color: rgb(0, 0, 0);
+}
+.containerIndex .botonesDiv .botonesTodos .btn1:hover {
+  background-color: rgb(160, 160, 77);
+  color: black;
+}
+.containerIndex .botonesDiv .botonesTodos .btn1 a {
+  text-decoration: none;
+}
+.containerIndex .botonesDiv .botonesTodos .btn2 {
+  background-color: rgb(0, 0, 0);
+}
+.containerIndex .botonesDiv .botonesTodos .btn2:hover {
+  background-color: rgb(160, 160, 77);
+  color: black;
+}
+.containerIndex .botonesDiv .botonesTodos .btn2 a {
+  text-decoration: none;
+}
+.containerIndex .botonesDiv .botonesTodos .btn3 {
+  background-color: rgb(0, 0, 0);
+}
+.containerIndex .botonesDiv .botonesTodos .btn3:hover {
+  background-color: rgb(160, 160, 77);
+  color: black;
+}
+.containerIndex .botonesDiv .botonesTodos .btn3 a {
+  text-decoration: none;
+}
+.containerIndex .botonesDiv .botonesAbajo {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  font-weight: bold;
+}
+.containerIndex .botonesDiv .botonesAbajo .boton {
+  padding: 11px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 20px;
+  border-color: yellow;
+  font-size: 1em;
+  color: red;
   display: inline;
-  padding-right: 1px;
-  justify-content: space-between;
-  padding-left: 40px;
+  justify-content: center;
+  align-items: center;
+  background-color: purple;
+  background-color: black;
+}
+.containerIndex .botonesDiv .botonesAbajo .boton:hover {
+  background-color: rgb(106, 29, 29);
+  color: black;
+  -webkit-text-size-adjust: 22px;
+     -moz-text-size-adjust: 22px;
+          text-size-adjust: 22px;
+}
+.containerIndex .botonesDiv .botonesAbajo .boton a {
+  text-decoration: none;
+}
+.containerIndex .footer {
+  height: auto;
+  padding-bottom: 110px;
+  padding-top: 130;
 }
 
-.footer a:hover {
-  color: #86895d;
+.articleDeptos {
+  background-color: rgb(0, 0, 0);
 }
-
-/* footer termina */
-/* MEDIA QUERIE */
-@media screen and (min-width: 750px) {
-  .container {
-    display: grid;
-    grid-template-areas: "header header" "cuerpo cuerpoDer" "descripcion descripcion" "footer footer";
-    grid-template-rows: 200px 2400px 1000px 180px;
-    grid-template-columns: 75% 25%;
-    height: 100vh;
-    width: 100%;
-    font-family: "Edu NSW ACT Foundation", cursive;
-    margin-left: 0%;
-  }
-  .positionButton {
-    display: flex;
-    justify-content: flex-end;
-    width: 180px;
-    height: 40px;
-    background-color: #b3ba56;
-    position: fixed;
-    bottom: 60px;
-    right: 7px;
-    color: rgb(9, 55, 2);
-    font-weight: bold;
-    padding: 5px 2px 2px 0px;
-    font-size: 24px;
-    text-decoration: none;
-    text-align: left;
-    text-align: center;
-  }
-  aside {
-    grid-area: cuerpoDer;
-    padding-top: 10px;
-    font-size: 30px;
-  }
-  .sideBarText {
-    padding-top: 700px;
-    padding-bottom: 0px;
-  }
-  .sideBarText1 {
-    padding-bottom: 400px;
-    padding-top: 300px;
-    padding-left: 10px;
-  }
-  .sideBarText2 {
-    padding-top: 200px;
-    padding-bottom: 20px;
-    padding-left: 0px;
-  }
-  .descrip {
-    font-size: 104px;
-  }
-  .descripTexto {
-    font-size: 40px;
-    padding-bottom: 50px;
-  }
-  .descripTexto1 {
-    font-size: 40px;
-    padding-bottom: 50px;
-  }
-  .descripTexto2 {
-    font-size: 40px;
-    padding-bottom: 200px;
-  }
-  footer {
-    grid-area: footer;
-    font-size: 20px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 10px;
-  }
-}
-/* TERMINA INDEX */
-/* Empieza Casas */
-.imgCasas {
+.articleDeptos .container-fluid {
   width: 1100px;
   height: 600px;
 }
+.articleDeptos .container-fluid .tituloDeptos {
+  display: flex;
+  justify-content: center;
+}
 
-.tituloCasas {
+.articleCasas {
+  background-color: rgb(0, 0, 0);
+}
+.articleCasas .container-fluid {
+  width: 1100px;
+  height: 600px;
+}
+.articleCasas .container-fluid .tituloCasas {
   display: flex;
   justify-content: center;
 }
 
 /* TERMINA Casas */
-/*  quienesSomos.html COMIENZA*/
-.containerQS {
-  display: grid;
-  grid-template-areas: "header " "cuerpoQ1" "cuerpoQ2" "quienesImg" "footer";
-  grid-template-rows: 200px 600px 400px 600px 100px;
-  grid-template-columns: 100%;
-  height: 100vh;
-  font-family: "Edu NSW ACT Foundation", cursive;
+.articleOtros {
+  background-color: rgb(0, 0, 0);
 }
-
-.cuerpoQ1 {
-  display: flex;
-  justify-content: center;
-  text-align: center;
+.articleOtros .container-fluid {
+  width: 1100px;
+  height: auto;
 }
-
-.quienesTitulo {
-  font-size: 80px;
-  padding-top: 100px;
-}
-
-.quienesDesc {
-  font-size: 35px;
-  padding-top: 80px;
-  padding-bottom: 70px;
-}
-
-.cuerpoQ2 {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
-.filoTitulo {
-  font-size: 40px;
-  padding-top: 140px;
-  padding-left: 50px;
-  color: #595957;
-}
-
-.filoDesc {
-  font-size: 30px;
-  padding-top: 60px;
-  line-height: 1.8;
-  color: rgb(103, 101, 101);
-}
-
-.quienesImg {
-  padding-top: 70px;
-  width: 600px;
-  height: 600px;
-}
-
-.footer {
-  grid-area: footer;
-  font-size: 20px;
-  height: 180px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/*  quienesSomos.html TERMINA*/
-/* OtrosProyectos.html COMIENZA*/
-.blockquote {
+.articleOtros .tituloOtros .text-end .blockquote {
   font-size: 3em;
 }
-
-.lead {
+.articleOtros .tituloOtros .text-end .lead {
   font-size: 2em;
   color: #8d8d8a;
 }
 
-/* OtrosProyectos.html TERMINA*/
 /* Contactos.html COMIENZA*/
-form {
+.sectionContacto {
+  background-color: rgb(0, 0, 0);
+}
+.sectionContacto form {
   font-size: 25px;
 }
 
@@ -412,4 +418,48 @@ form {
   height: 200px;
 }
 
-/* Contactos.html TERMINA*//*# sourceMappingURL=styles.css.map */
+/* Contactos.html TERMINA*/
+/*  quienesSomos.html COMIENZA*/
+.articleQuienes {
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  justify-content: center;
+  text-align: center;
+}
+.articleQuienes .quienesTitulo {
+  font-size: 80px;
+  padding-top: 100px;
+}
+.articleQuienes .quienesDesc {
+  font-size: 35px;
+  padding-top: 80px;
+  padding-bottom: 70px;
+}
+
+.sectionQuienes {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.sectionQuienes .filoTitulo {
+  font-size: 40px;
+  padding-top: 140px;
+  padding-left: 50px;
+  color: #595957;
+}
+.sectionQuienes .filoDesc {
+  font-size: 30px;
+  padding-top: 60px;
+  line-height: 1.8;
+  color: rgb(103, 101, 101);
+}
+
+.quienesImagen {
+  background-color: rgb(0, 0, 0);
+}
+.quienesImagen .quienesImg {
+  padding-top: 70px;
+  width: 600px;
+  height: 600px;
+}/*# sourceMappingURL=styles.css.map */
