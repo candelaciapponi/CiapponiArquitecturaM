@@ -41,7 +41,7 @@ html {
 // }
 
 
-@media screen (min-width: 760px) {
+@media (min-width: 760px) {
     .containerIndex {        
 
         .articleIndex {
@@ -89,9 +89,6 @@ html {
                         padding-bottom: 50px;   
                         padding-left: 40%;             
                     }
-                    
-                    .sideBarText2 {
-                    } 
             }    
         } 
     }

@@ -92,7 +92,45 @@ html {
   min-height: 100%;
 }
 
-.containerIndex .botonesDiv .botonesTodos .btn3, .containerIndex .botonesDiv .botonesTodos .btn2, .containerIndex .botonesDiv .botonesTodos .btn1 {
+@media (min-width: 760px) {
+  .containerIndex .articleIndex {
+    background-color: red;
+  }
+  .containerIndex .articleIndex .indexCuerpo .sideBar0 {
+    font-size: 1.8rem;
+    padding-top: 550px;
+    color: blue;
+  }
+  .containerIndex .articleIndex .indexCuerpo .sideBar0 .sideBarText {
+    padding-bottom: 800px;
+  }
+  .containerIndex .articleIndex .indexCuerpo .sideBar0 .sideBarText1 {
+    padding-top: 120px;
+    padding-bottom: 800px;
+  }
+  .containerIndex .articleIndex .indexCuerpo .imagenesCuerpo .indexImg {
+    padding-bottom: 100px;
+    height: 500px;
+    width: 100%;
+  }
+  .containerIndex .articleIndex .sideBar0 {
+    font-size: 1.4rem;
+    background-color: red;
+    color: red;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    text-align: center;
+  }
+  .containerIndex .articleIndex .sideBar0 .sideBarText {
+    padding-bottom: 50px;
+    padding-left: 70%;
+  }
+  .containerIndex .articleIndex .sideBar0 .sideBarText1 {
+    padding-bottom: 50px;
+    padding-left: 40%;
+  }
+}
+.botonesDiv .botonesTodos .btn3, .botonesDiv .botonesTodos .btn2, .botonesDiv .botonesTodos .btn1 {
   padding: 11px;
   padding-left: 40px;
   padding-right: 40px;
@@ -232,60 +270,58 @@ body {
   color: olive;
 }
 
-.containerIndex {
-  min-width: 100%;
-}
-.containerIndex .articleIndex {
+.articleIndex {
   background-color: rgb(0, 0, 0);
   font-size: 2em;
   text-align: center;
 }
-.containerIndex .articleIndex .indexCuerpo .imagenesCuerpo .indexImg {
+.articleIndex .indexCuerpo .imagenesCuerpo .indexImg {
   padding-bottom: 100px;
   height: 500px;
   width: 100%;
 }
-.containerIndex .articleIndex .indexCuerpo .sideBar0 {
+.articleIndex .indexCuerpo .sideBar0 {
   font-size: 1.4rem;
-  background-color: rgb(0, 0, 0);
   color: olive;
   padding-bottom: 100px;
   padding-top: 100px;
   text-align: center;
 }
-.containerIndex .articleIndex .indexCuerpo .sideBar0 .sideBarText {
+.articleIndex .indexCuerpo .sideBar0 .sideBarText {
   padding-bottom: 50px;
   padding-left: 70%;
 }
-.containerIndex .articleIndex .indexCuerpo .sideBar0 .sideBarText1 {
+.articleIndex .indexCuerpo .sideBar0 .sideBarText1 {
   padding-bottom: 50px;
   padding-left: 40%;
 }
-.containerIndex .sectionIndex {
+
+.sectionIndex {
   background-color: rgb(0, 0, 0);
   height: auto;
   padding-bottom: 150px;
   padding-top: 150px;
 }
-.containerIndex .sectionIndex .descrip {
+.sectionIndex .descrip {
   text-align: center;
   padding-top: 20px;
 }
-.containerIndex .sectionIndex .descrip .descripTitulo {
+.sectionIndex .descrip .descripTitulo {
   font-size: 80px;
   padding-top: 100px;
   padding-bottom: 100px;
 }
-.containerIndex .sectionIndex .descrip .descripTexto {
+.sectionIndex .descrip .descripTexto {
   font-size: 40px;
 }
-.containerIndex .sectionIndex .descrip .descripTexto1 {
+.sectionIndex .descrip .descripTexto1 {
   font-size: 40px;
 }
-.containerIndex .sectionIndex .descrip .descripTexto2 {
+.sectionIndex .descrip .descripTexto2 {
   font-size: 40px;
 }
-.containerIndex .botonesDiv {
+
+.botonesDiv {
   align-items: center;
   background-color: rgb(0, 0, 0);
   height: auto;
@@ -293,49 +329,49 @@ body {
   padding-bottom: 150px;
   padding-top: 150px;
 }
-.containerIndex .botonesDiv .botonesTodos {
+.botonesDiv .botonesTodos {
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
   font-weight: bold;
 }
-.containerIndex .botonesDiv .botonesTodos .btn1 {
+.botonesDiv .botonesTodos .btn1 {
   background-color: rgb(0, 0, 0);
 }
-.containerIndex .botonesDiv .botonesTodos .btn1:hover {
+.botonesDiv .botonesTodos .btn1:hover {
   background-color: rgb(160, 160, 77);
   color: black;
 }
-.containerIndex .botonesDiv .botonesTodos .btn1 a {
+.botonesDiv .botonesTodos .btn1 a {
   text-decoration: none;
 }
-.containerIndex .botonesDiv .botonesTodos .btn2 {
+.botonesDiv .botonesTodos .btn2 {
   background-color: rgb(0, 0, 0);
 }
-.containerIndex .botonesDiv .botonesTodos .btn2:hover {
+.botonesDiv .botonesTodos .btn2:hover {
   background-color: rgb(160, 160, 77);
   color: black;
 }
-.containerIndex .botonesDiv .botonesTodos .btn2 a {
+.botonesDiv .botonesTodos .btn2 a {
   text-decoration: none;
 }
-.containerIndex .botonesDiv .botonesTodos .btn3 {
+.botonesDiv .botonesTodos .btn3 {
   background-color: rgb(0, 0, 0);
 }
-.containerIndex .botonesDiv .botonesTodos .btn3:hover {
+.botonesDiv .botonesTodos .btn3:hover {
   background-color: rgb(160, 160, 77);
   color: black;
 }
-.containerIndex .botonesDiv .botonesTodos .btn3 a {
+.botonesDiv .botonesTodos .btn3 a {
   text-decoration: none;
 }
-.containerIndex .botonesDiv .botonesAbajo {
+.botonesDiv .botonesAbajo {
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
   font-weight: bold;
 }
-.containerIndex .botonesDiv .botonesAbajo .boton {
+.botonesDiv .botonesAbajo .boton {
   padding: 11px;
   padding-left: 20px;
   padding-right: 20px;
@@ -349,17 +385,18 @@ body {
   background-color: purple;
   background-color: black;
 }
-.containerIndex .botonesDiv .botonesAbajo .boton:hover {
+.botonesDiv .botonesAbajo .boton:hover {
   background-color: rgb(106, 29, 29);
   color: black;
   -webkit-text-size-adjust: 22px;
      -moz-text-size-adjust: 22px;
           text-size-adjust: 22px;
 }
-.containerIndex .botonesDiv .botonesAbajo .boton a {
+.botonesDiv .botonesAbajo .boton a {
   text-decoration: none;
 }
-.containerIndex .footer {
+
+.footer {
   height: auto;
   padding-bottom: 110px;
   padding-top: 130;
