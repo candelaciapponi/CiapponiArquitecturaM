@@ -2,94 +2,37 @@ html {
     min-height: 100%;
 }
 
-// .containerIndex{
-//     display: grid;
-//     min-height: 100%;
-//     grid-template-areas:
-//     "header"
-//     "articleIndex"
-//     "asideIndex"
-//     "sectionIndex"
-//     "botonesDiv"
-//     "footer";
-// }   
-
-// .header {
-//     grid-area: header;
-// }
-// .articleIndex {
-//     grid-area: articleIndex;
-// }
-
-// .asideIndex {
-//     grid-template-areas: asideIndex;
-//     justify-content: center;
-//     align-items: center;
-//     height: auto;
-// }
-
-// .sectionIndex {
-//     grid-area: sectionIndex;;
-// }
-
-// .botonesDiv {
-//     grid-area: botonesDiv;
-// }
-
-// .footer {
-//     grid-area: footer;
-// }
-
-
 @media (min-width: 760px) {
     .containerIndex {        
 
+
         .articleIndex {
-            background-color: red;
+            background-color: $background-primary-color;
 
             .indexCuerpo { 
                 .sideBar0 {
-                    font-size: 1.8rem;
-                    padding-top: 550px;
-                    color: blue;
+                    font-size: 1.6rem;
+                    padding-top: 450px;
+                    color: $font-terciary-color;
                     
                     .sideBarText {
-                    padding-bottom: 800px;
+                    padding-bottom: 500px;
                     }
 
                     .sideBarText1 {
                         padding-top: 120px;
-                        padding-bottom: 800px;
+                        padding-bottom: 600px;
                     }        
                 }
 
                 .imagenesCuerpo {                  
                     .indexImg {
                         padding-bottom: 100px;
-                        height: 500px;
+                        height: 700px;
                         width: 100%;
                     }                                          
                 }            
             }
-            
-            .sideBar0 {
-                font-size: 1.4rem; 
-                background-color: red;        
-                color: red;
-                padding-bottom: 100px;
-                padding-top: 100px;
-                text-align: center;
-        
-                    .sideBarText {
-                        padding-bottom: 50px;                
-                        padding-left: 70%;             
-                    }    
-                
-                    .sideBarText1 {
-                        padding-bottom: 50px;   
-                        padding-left: 40%;             
-                    }
-            }    
         } 
     }
 }

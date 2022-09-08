@@ -88,53 +88,11 @@ body {
     color: aliceblue;
   }
 }
-html {
-  min-height: 100%;
-}
-
-@media (min-width: 760px) {
-  .containerIndex .articleIndex {
-    background-color: red;
-  }
-  .containerIndex .articleIndex .indexCuerpo .sideBar0 {
-    font-size: 1.8rem;
-    padding-top: 550px;
-    color: blue;
-  }
-  .containerIndex .articleIndex .indexCuerpo .sideBar0 .sideBarText {
-    padding-bottom: 800px;
-  }
-  .containerIndex .articleIndex .indexCuerpo .sideBar0 .sideBarText1 {
-    padding-top: 120px;
-    padding-bottom: 800px;
-  }
-  .containerIndex .articleIndex .indexCuerpo .imagenesCuerpo .indexImg {
-    padding-bottom: 100px;
-    height: 500px;
-    width: 100%;
-  }
-  .containerIndex .articleIndex .sideBar0 {
-    font-size: 1.4rem;
-    background-color: red;
-    color: red;
-    padding-bottom: 100px;
-    padding-top: 100px;
-    text-align: center;
-  }
-  .containerIndex .articleIndex .sideBar0 .sideBarText {
-    padding-bottom: 50px;
-    padding-left: 70%;
-  }
-  .containerIndex .articleIndex .sideBar0 .sideBarText1 {
-    padding-bottom: 50px;
-    padding-left: 40%;
-  }
-}
-.botonesDiv .botonesTodos .btn3, .botonesDiv .botonesTodos .btn2, .botonesDiv .botonesTodos .btn1 {
-  padding: 11px;
-  padding-left: 40px;
-  padding-right: 40px;
-  border-radius: 40px;
+.containerIndex .botonesDiv .botonesTodos .btn3, .containerIndex .botonesDiv .botonesTodos .btn2, .containerIndex .botonesDiv .botonesTodos .btn1 {
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 20px;
   border-color: rgb(160, 160, 77);
   font-size: 1em;
   display: inline;
@@ -270,58 +228,56 @@ body {
   color: olive;
 }
 
-.articleIndex {
+.containerIndex .articleIndex {
   background-color: rgb(0, 0, 0);
   font-size: 2em;
   text-align: center;
 }
-.articleIndex .indexCuerpo .imagenesCuerpo .indexImg {
+.containerIndex .articleIndex .indexCuerpo .imagenesCuerpo .indexImg {
   padding-bottom: 100px;
-  height: 500px;
-  width: 100%;
+  height: 350px;
+  width: 150%;
 }
-.articleIndex .indexCuerpo .sideBar0 {
+.containerIndex .articleIndex .indexCuerpo .sideBar0 {
   font-size: 1.4rem;
   color: olive;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   padding-top: 100px;
   text-align: center;
 }
-.articleIndex .indexCuerpo .sideBar0 .sideBarText {
+.containerIndex .articleIndex .indexCuerpo .sideBar0 .sideBarText {
   padding-bottom: 50px;
   padding-left: 70%;
 }
-.articleIndex .indexCuerpo .sideBar0 .sideBarText1 {
+.containerIndex .articleIndex .indexCuerpo .sideBar0 .sideBarText1 {
   padding-bottom: 50px;
   padding-left: 40%;
 }
-
-.sectionIndex {
+.containerIndex .sectionIndex {
   background-color: rgb(0, 0, 0);
   height: auto;
   padding-bottom: 150px;
-  padding-top: 150px;
+  padding-top: 5px;
 }
-.sectionIndex .descrip {
+.containerIndex .sectionIndex .descrip {
   text-align: center;
   padding-top: 20px;
 }
-.sectionIndex .descrip .descripTitulo {
+.containerIndex .sectionIndex .descrip .descripTitulo {
   font-size: 80px;
   padding-top: 100px;
   padding-bottom: 100px;
 }
-.sectionIndex .descrip .descripTexto {
+.containerIndex .sectionIndex .descrip .descripTexto {
   font-size: 40px;
 }
-.sectionIndex .descrip .descripTexto1 {
+.containerIndex .sectionIndex .descrip .descripTexto1 {
   font-size: 40px;
 }
-.sectionIndex .descrip .descripTexto2 {
+.containerIndex .sectionIndex .descrip .descripTexto2 {
   font-size: 40px;
 }
-
-.botonesDiv {
+.containerIndex .botonesDiv {
   align-items: center;
   background-color: rgb(0, 0, 0);
   height: auto;
@@ -329,49 +285,49 @@ body {
   padding-bottom: 150px;
   padding-top: 150px;
 }
-.botonesDiv .botonesTodos {
+.containerIndex .botonesDiv .botonesTodos {
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
   font-weight: bold;
 }
-.botonesDiv .botonesTodos .btn1 {
+.containerIndex .botonesDiv .botonesTodos .btn1 {
   background-color: rgb(0, 0, 0);
 }
-.botonesDiv .botonesTodos .btn1:hover {
+.containerIndex .botonesDiv .botonesTodos .btn1:hover {
   background-color: rgb(160, 160, 77);
   color: black;
 }
-.botonesDiv .botonesTodos .btn1 a {
+.containerIndex .botonesDiv .botonesTodos .btn1 a {
   text-decoration: none;
 }
-.botonesDiv .botonesTodos .btn2 {
+.containerIndex .botonesDiv .botonesTodos .btn2 {
   background-color: rgb(0, 0, 0);
 }
-.botonesDiv .botonesTodos .btn2:hover {
+.containerIndex .botonesDiv .botonesTodos .btn2:hover {
   background-color: rgb(160, 160, 77);
   color: black;
 }
-.botonesDiv .botonesTodos .btn2 a {
+.containerIndex .botonesDiv .botonesTodos .btn2 a {
   text-decoration: none;
 }
-.botonesDiv .botonesTodos .btn3 {
+.containerIndex .botonesDiv .botonesTodos .btn3 {
   background-color: rgb(0, 0, 0);
 }
-.botonesDiv .botonesTodos .btn3:hover {
+.containerIndex .botonesDiv .botonesTodos .btn3:hover {
   background-color: rgb(160, 160, 77);
   color: black;
 }
-.botonesDiv .botonesTodos .btn3 a {
+.containerIndex .botonesDiv .botonesTodos .btn3 a {
   text-decoration: none;
 }
-.botonesDiv .botonesAbajo {
+.containerIndex .botonesDiv .botonesAbajo {
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
   font-weight: bold;
 }
-.botonesDiv .botonesAbajo .boton {
+.containerIndex .botonesDiv .botonesAbajo .boton {
   padding: 11px;
   padding-left: 20px;
   padding-right: 20px;
@@ -385,21 +341,36 @@ body {
   background-color: purple;
   background-color: black;
 }
-.botonesDiv .botonesAbajo .boton:hover {
+.containerIndex .botonesDiv .botonesAbajo .boton:hover {
   background-color: rgb(106, 29, 29);
   color: black;
   -webkit-text-size-adjust: 22px;
      -moz-text-size-adjust: 22px;
           text-size-adjust: 22px;
 }
-.botonesDiv .botonesAbajo .boton a {
+.containerIndex .botonesDiv .botonesAbajo .boton a {
   text-decoration: none;
 }
-
-.footer {
-  height: auto;
-  padding-bottom: 110px;
-  padding-top: 130;
+.containerIndex .footer {
+  padding-top: 20px;
+  padding-bottom: 70px;
+  justify-content: space-between;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 1.3em;
+  height: 300px;
+  color: rgb(240, 240, 240);
+}
+.containerIndex .footer .navbar .container-fluid .footerObjetos li {
+  display: inline;
+  font-size: 1em;
+}
+.containerIndex .footer .navbar .container-fluid .footerObjetos li a {
+  text-decoration: none;
+  color: inherit;
+}
+.containerIndex .footer .navbar .container-fluid .footerObjetos li a:hover {
+  color: olive;
 }
 
 .articleDeptos {
@@ -499,4 +470,31 @@ body {
   padding-top: 70px;
   width: 600px;
   height: 600px;
+}
+
+html {
+  min-height: 100%;
+}
+
+@media (min-width: 760px) {
+  .containerIndex .articleIndex {
+    background-color: rgb(0, 0, 0);
+  }
+  .containerIndex .articleIndex .indexCuerpo .sideBar0 {
+    font-size: 1.6rem;
+    padding-top: 450px;
+    color: #808000;
+  }
+  .containerIndex .articleIndex .indexCuerpo .sideBar0 .sideBarText {
+    padding-bottom: 500px;
+  }
+  .containerIndex .articleIndex .indexCuerpo .sideBar0 .sideBarText1 {
+    padding-top: 120px;
+    padding-bottom: 600px;
+  }
+  .containerIndex .articleIndex .indexCuerpo .imagenesCuerpo .indexImg {
+    padding-bottom: 100px;
+    height: 700px;
+    width: 100%;
+  }
 }/*# sourceMappingURL=styles.css.map */
