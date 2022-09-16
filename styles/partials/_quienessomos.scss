@@ -8,7 +8,7 @@
     text-align: center;
 
     .quienesTitulo {
-        font-size: 80px;
+        font-size: 4em;
         padding-top: 100px;   
     }
     .quienesDesc {
@@ -20,16 +20,14 @@
 
 
 .sectionQuienes {
-    background-color: $background-primary-color;
-
     display: flex;
+    background-color: $background-primary-color;
     justify-content: center;
     text-align: center;
     
     .filoTitulo {
         font-size: 40px;
         padding-top: 140px;    
-        padding-left: 50px;
         color: #595957;
     }
     
@@ -41,13 +39,25 @@
     }    
 }
 
-.quienesImagen {
+
+
+.main_quienes {
     background-color: $background-primary-color;
-    .quienesImg {    
-        padding-top: 70px;
-        width: 600px;
-        height: 600px;
+
+    .main_imagen{
+        display: flex;
+        justify-content: center;
+        
+        .main_img {
+            width: 270px;
+            height: 200px;
+        }
+    }
+
+    .side_quienes {        
+        display: flex;                
+        line-height: 32px;
+        justify-content: center;
     }
 }
-
 

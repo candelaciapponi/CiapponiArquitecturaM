@@ -1,36 +1,6 @@
-// .containerIndex {
-    // display: grid;
-    //     min-height: 100%;
-    //     grid-template-areas:
-    //     "header"
-    //     "articleIndex"
-    //     "asideIndex"
-    //     "sectionIndex"
-    //     "botonesDiv"
-    //     "footer";
-    //     height: auto;
-    // min-width: 100%;
-    // }   
-
-    // No puedo cambiar la letra (tamaño) al inicio, y posicion
-    // .header {
-    //     .nav-bar {
-    //         .container-fluid  {
-    //             .nav-item {
-    //                 font-size: 3em;
-    //                 .nav-link {
-    //                     color: orange;
-    //                     font-size: 3em;
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
-
-.containerIndex {    
+.containerIndex {   
+    background-color: $background-primary-color; 
     .articleIndex {
-        background-color: map-get($estilos, background-primary-color);
-
         font-size: 2em;
         text-align: center;
 
@@ -38,8 +8,8 @@
             .imagenesCuerpo {                  
                 .indexImg {
                     padding-bottom: 100px;
-                    height: 350px;
-                    width: 150%;
+                    height: auto;
+                    max-width: auto;
                 }                                          
             }
 
@@ -47,18 +17,18 @@
                 font-size: 1.4rem; 
                 color: olive;
                 padding-bottom: 50px;
-                padding-top: 100px;
-                text-align: center;
+                padding-top: 70px;
         
-                    .sideBarText {
-                        padding-bottom: 50px;                
-                        padding-left: 70%;             
-                    }    
+                .sideBarText {
+                    padding-bottom: 50px;                
+                    padding-right: 10%;             
+                }    
                 
-                    .sideBarText1 {
-                        padding-bottom: 50px;   
-                        padding-left: 40%;             
-                    }
+                .sideBarText1 {
+                    padding-bottom: 20px;   
+                    padding-right: 10%;             
+                }
+
             }      
         }            
     }                         
@@ -67,152 +37,190 @@
     .sectionIndex {
         background-color: $background-primary-color;
         height: auto;
-        padding-bottom: 150px;
-        padding-top: 5px;
+        padding-bottom: 50px;
+        padding-top: 200px;
 
 
-        .descrip {
+        .descripIndex {
             text-align: center;
             padding-top: 20px;
+            padding-bottom: 60px;
+
 
             .descripTitulo {
-                font-size: 80px;
-                padding-top: 100px;
-                padding-bottom: 100px;
+                font-size: 4.7em;
             }
-            .descripTexto {
-                font-size: 40px;
-            }
-              
-            .descripTexto1 {
-                font-size: 40px;
-            }
-              
-            .descripTexto2 {
-                font-size: 40px;
-            }        
+        }
+                 
+        .lineasDescrip {
+            font-size: 1.2em;
         }
     }
     
     .botonesDiv {
-        // display: flex;
-        // justify-content: center;
-        // flex-direction: row;
         align-items: center;
         background-color: $background-primary-color;
-        height: auto; 
+        height:auto; 
         width: auto;
-        padding-bottom: 150px;
-        padding-top: 150px;
-        
-        .botonesTodos {    
+        padding-top: 100px;
+        padding-bottom: 200px;
+
+        .botonesArriba {    
             display: flex;
-            justify-content: center;
             justify-content: space-evenly;
             font-weight: bold;
+            height: 130px;
+            text-decoration: none;
+
     
             .btn1 {
                 @extend %botonBase; 
-                background-color: $background-primary-color;
-                &:hover {
-                    background-color: $boton-index-color-relleno;
-                    color: black;
-                }     
+                background-color: $index_button_bg_color;
+
                 a {
-                    text-decoration: none;
-    
-                }
+                    text-decoration: none;  
+                    color: $index_button_font_color;                 }
+
+                &:hover {
+                    color: black;
+                    background-color: $index_btnArriba_bg_color_hover;
+                }     
+               
             }     
             
     
             .btn2 {
-                @extend %botonBase;      
-                background-color: $background-primary-color;
-                &:hover {
-                    background-color: $boton-index-color-relleno;
-                    color: black;
-                }     
+                @extend %botonBase; 
+                background-color: $index_button_bg_color;
+                width: 90px;
+
                 a {
-                    text-decoration: none;
-    
-                }
-            }
-    
-            .btn3 {
-                @extend %botonBase;      
-                background-color: $background-primary-color;
+                    text-decoration: none;  
+                    color: $index_button_font_color;                 }
+
                 &:hover {
-                    background-color: $boton-index-color-relleno;
                     color: black;
-                }    
-                a {
-                    text-decoration: none;
-    
-                } 
+                    background-color: $index_btnArriba_bg_color_hover;
+                }                    
             }
         }
-    
+
+        .botonMedio {
+            @include flex-center;
+
+            .btn3 {
+                @extend %botonBase; 
+                background-color: $index_button_bg_color;
+
+                a {
+                    text-decoration: none;  
+                    color: $index_button_font_color;                 
+                }
+
+                &:hover {
+                    color: black;
+                    background-color: $index_btnArriba_bg_color_hover;
+                }     
+               
+            }
+        }
+
         .botonesAbajo {
             display: flex;
             justify-content: center;
             justify-content: space-evenly;
-            font-weight: bold;  
-    
-            .boton {
-                @include botones($textColor: red, $bgcolor: purple, $border-color: yellow);
-                background-color: black;
-                &:hover {
-                    background-color: rgb(106, 29, 29);
-                    color: black;
-                    text-size-adjust: 22px;
-                }   
-    
+            font-weight: bold;
+            height: 130px;
+            text-decoration: none;
+
+            .boton1 {
+                @extend %botonBase; 
+                background-color: $index_button_bg_color;
+
                 a {
-                    text-decoration: none;
+                    text-decoration: none;  
+                    color: $index_button_font_color; 
+                }
+
+                &:hover {
+                    color: black;
+                    background-color: $index_btnAbajo_bg_color_hover;
+                }     
+               
+            }
+            
+            .boton2 {
+                @extend %botonBase; 
+                background-color: $index_button_bg_color;
+
+                a {
+                    text-decoration: none;  
+                    color: $index_button_font_color;                     
+                }
+
+                &:hover {
+                    color: black;
+                    background-color: $index_btnAbajo_bg_color_hover;
+                }     
+               
+            }
+        }
+    }
+   
+
+    .indexProductos {
+        .rowCards {
+            .col1Cards {
+                .cardOne {
+                    background-color: rgb(2, 79, 2);
+                    .primeraCardfoot {
+                        color:pink
+                    }
                 }
             }   
-           
-        }                            
-    }        
-
-    .footer {   
-        padding-top: 20px;   
-        padding-bottom: 70px;   
-        justify-content: space-between;
-        background-color: $background-primary-color;    
-        text-align: center;
-        font-size: 1.3em;
-        height: 300px;
-        color: $font-primary-color;
-    
-        .navbar {
-          
-            .container-fluid {
-                
-                .footerObjetos {       
-                    
-                    li {        
-                        display: inline;
-                        font-size: 1em;
-    
-                        a {
-                            text-decoration: none;
-                            color: inherit;
-                    
-                            &:hover {
-                                color: olive;
-                            }
-                        }
+            .col2Cards {
+                .cardTwo {
+                    background-color: rgb(2, 79, 2);
+                    .segundaCardfoot {
+                        color:pink
                     }
-                }            
-            }
-        }    
-    } 
-    
-}    
+                }
+            }   
+            .col3Cards {
+                .cardThree {
+                    background-color: rgb(2, 79, 2);
+                    .terceraCardfoot {
+                        color:pink
+                    }
+                }
+            }            
+        }       
+    }
 
- 
+    .articleAbajo {
+            padding-bottom: map-get($estilos, paddingbottom_articleAbajoIndex);
+            padding-top: map-get($estilos, paddingtop_articleAbajoIndex);
 
+        .articleAbajo1 {
+            text-align: center;        
+            line-height: 63px;
+            color: olive;
+        }
 
+        .articleAbajo2 {
+            text-align: center;                       
+        } 
 
+        .articleAbajo3 {
+            display: flex;        
+            align-content: center;
+            text-align: center;                       
+            justify-content: center;
+            color: olive;
+        }
 
+        .lastImgIndex {
+            padding-top: map-get($estilos, paddingbottom_lastImgIndex);
+        }
+    }     
+}

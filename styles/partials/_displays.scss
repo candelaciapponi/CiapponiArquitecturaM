@@ -2,27 +2,35 @@ html {
     min-height: 100%;
 }
 
+// MEDIA INDEX
+
 @media (min-width: 760px) {
     .containerIndex {        
-
-
         .articleIndex {
-            background-color: $background-primary-color;
-
+            // background-color: $background-primary-color;
             .indexCuerpo { 
+                text-align: start;    
+            
                 .sideBar0 {
-                    font-size: 1.6rem;
-                    padding-top: 450px;
-                    color: $font-terciary-color;
+                    // color: $font-terciary-color;
                     
                     .sideBarText {
-                    padding-bottom: 500px;
+                        padding-top: 300px;
+                        padding-bottom: 500px;
+                        font-size: 1.5em;
                     }
 
                     .sideBarText1 {
-                        padding-top: 120px;
+                        padding-top: 500px;
                         padding-bottom: 600px;
-                    }        
+                        font-size: 1.4em;
+                    } 
+                    
+                    .sideBarText2 {
+                        padding-top: 400px;
+                        padding-bottom: 100px;
+                        font-size: 1.4em;
+                    }       
                 }
 
                 .imagenesCuerpo {                  
@@ -34,9 +42,113 @@ html {
                 }            
             }
         } 
+
+        .sectionIndex {                        
+            padding-bottom: 250px;
+            padding-top: 200px;
+    
+    
+            .descripIndex {
+                text-align: center;
+                padding-top: 20px;
+                padding-bottom: 60px;
+            }
+                     
+            .lineasDescrip {
+                padding-top: 100px;
+                padding-bottom: 200px;
+                color: rgba(240, 240, 240, 0.571);
+                .descripTexto {                    
+                    font-size: 2.2em;
+                }
+                .descripTexto1 {                    
+                    font-size: 2.2em;
+                }
+                .descripTexto2 {                    
+                    font-size: 2.2em;
+                }
+            }            
+        }
+
+        .botonesDiv {
+            .botonesArriba {
+                .btn2 {
+                    width: 150px !important;                    
+                }
+            }
+
+            .botonesAbajo {
+                .boton1 {
+                    width: 150px !important;
+                }
+            }
+        }
+        
+
+
+
+        .indexProductos {
+            padding-top: 400px;
+            padding-bottom: 300px;
+            .rowCards {
+                .col1Cards {
+                    .cardOne {
+                        width: 300px;
+                        height: 300px;
+                        background-color: rgb(2, 79, 2);                        
+                        .primeraCardfoot {
+                            color:pink
+                        }
+                    }   
+                }
+
+                .col2Cards {
+                    .cardTwo {
+                        width: 300px;
+                        height: 300px;
+                        background-color: rgb(2, 79, 2);                        
+
+                        .segundaCardfoot {
+                            color:pink
+                        }
+                    }
+                }   
+                .col3Cards {
+                    .cardThree {
+                        width: 300px;
+                        height: 300px;
+                        background-color: rgb(2, 79, 2);   
+                        .terceraCardfoot {
+                            color:pink
+                        }
+                    }
+                }            
+            }       
+        }
+
+        .articleAbajo {
+            padding-bottom: 300px;
+            flex-direction: row;
+            align-items: center;
+
+            .articleAbajo1 {
+                font-size: 2rem;
+                color: gray;
+            }
+
+
+            .articleAbajo3 {
+                font-size: 2rem;
+                color: gray;
+            }
+    
+            .lastImgIndex {
+                display: flex;
+                margin-left: 550px;
+                padding-top: 180px;
+                height: 400px;
+                width: 250px;                                
+            }    
+        }    
     }
 }
-
-    
-    
-        
