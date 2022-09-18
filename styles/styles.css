@@ -138,7 +138,7 @@ body {
   height: auto;
   background-color: #b3ba56;
   position: fixed;
-  bottom: 10px;
+  bottom: 70px;
   right: 7px;
   color: rgb(9, 55, 2);
   font-weight: bold;
@@ -219,7 +219,6 @@ body {
     right: 7px;
     color: rgb(9, 55, 2);
     font-weight: bold;
-    padding: 5px 2px 5px 0px;
     font-size: 1rem;
     text-decoration: none;
     text-align: left;
@@ -665,7 +664,7 @@ body {
   height: auto;
   background-color: #b3ba56;
   position: fixed;
-  bottom: 10px;
+  bottom: 70px;
   right: 7px;
   color: rgb(9, 55, 2);
   font-weight: bold;
@@ -725,7 +724,6 @@ body {
     right: 7px;
     color: rgb(9, 55, 2);
     font-weight: bold;
-    padding: 5px 2px 5px 0px;
     font-size: 1rem;
     text-decoration: none;
     text-align: left;
