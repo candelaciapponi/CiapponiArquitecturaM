@@ -1,6 +1,6 @@
 
 .articleCasas {
-    background-color: $background-primary-color;;
+    background-color: $background-primary-color;
 
     .container-fluid {
         width: 1100px;
@@ -8,8 +8,132 @@
     
         .tituloCasas {
             display: flex;
-            justify-content: center;
+            justify-content: start;
+            font-size: 2rem;
         }
     }
    
+}
+
+.section_casas_uno {
+    background-color: $background-primary-color;
+
+    .sideBar0 {
+        font-size: 1.4rem;
+        text-align: center;
+        color: $font-terciary-color;
+        padding-bottom: 90px;
+
+        .lista_seccion {
+            padding-top: 50px;
+            padding-bottom: 100px;
+        }
+    }
+
+    .imagenesCuerpo {
+        padding-bottom: 200px;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+.section_casas_mid {
+    background-color: $background-primary-color;
+    text-align: center;
+
+    .imagenesCuerpo2 {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+
+}
+
+.section_casas_dos {
+    background-color: $background-primary-color;
+
+
+    .article_casas_txt {
+        color: $font-index-ultima-sec;
+        text-align: center;
+        padding-bottom: 100px;            
+    }
+
+    .imagenesCuerpo3 {
+        padding-bottom: 200px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    .articleCasas {
+        .container-fluid {
+            .tituloCasas {
+                font-size: 3.2rem;
+            }
+        }
+    }
+
+
+
+    .section_casas_uno {    
+        padding-top: 300px;
+        padding-bottom: 300px;
+
+        .sideBar0 {
+            font-size: 3rem;
+            text-align: center;
+    
+            .lista_seccion {
+                padding-bottom: 100px;
+            }
+        }
+    
+        .imagenesCuerpo {
+            padding-top: 150px;
+            display: flex;
+            justify-content: center;
+        }
+    
+    }
+    
+    .section_casas_mid {
+        font-size: 2rem;
+        padding-bottom: 200px;
+
+    
+        .imagenesCuerpo2 {
+            padding-top: 300px;
+        }
+    
+    }
+    
+    .section_casas_dos {
+    
+    
+        .article_casas_txt {
+            display: flex;
+            flex-direction: column;
+            color: $font-index-ultima-sec;
+            text-align: center;
+            padding-bottom: 100px;       
+            justify-content: center;     
+        }
+    
+        .imagenesCuerpo3 {
+            padding-bottom: 200px;
+            display: flex;
+            justify-content: center;
+
+            .gif_uno {
+                padding-top: 50px;
+                height: 300px;
+                width: 220px;
+            }
+        }
+    }
+    
 }

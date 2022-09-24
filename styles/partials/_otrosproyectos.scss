@@ -5,20 +5,37 @@
     .container-fluid {
         width: 1100px;
         height: auto;
+
+        .tituloOtros {
+            .text-end {
+                .blockquote {
+                    font-size: 3em;
+                }
+                
+                .lead {
+                    font-size: 1.2em;
+                    color: #8d8d8a;
+                }
+            }
+        }   
+
+    }
+}
+
+.section_ultima {
+    background-color: black;
+    .section_txt {
+        padding-top: 300px;
     }
 
-    .tituloOtros {
-        .text-end {
-            .blockquote {
-                font-size: 3em;
-            }
-            
-            .lead {
-                font-size: 2em;
-                color: #8d8d8a;
-            }
+    .imagenesCuerpoDos {
+        padding-top: 100px;
+
+        .gif_op {
+            padding-top: 100px;
         }
-    }   
+
+    }
 }
     
 

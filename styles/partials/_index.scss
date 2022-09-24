@@ -1,7 +1,7 @@
-.containerIndex {   
+.containerIndex {       
     background-color: $background-primary-color; 
     .articleIndex {
-        font-size: 2em;
+        font-size: 2rem;
         text-align: center;
 
         .indexCuerpo {
@@ -10,12 +10,24 @@
                     padding-bottom: 100px;
                     height: auto;
                     max-width: auto;
-                }                                          
+                }   
+            }                 
+                
+            .gif_cubo {
+                display: flex;
+                justify-content: center;
+                padding-top: 50px;
+
+                .cubo_imagen {
+                    height: 175px;
+                    width: 175px;                    ;
+                }                                              
             }
+            
 
             .sideBar0 {
                 font-size: 1.4rem; 
-                color: olive;
+                color: $font-terciary-color;
                 padding-bottom: 50px;
                 padding-top: 70px;
         
@@ -25,11 +37,15 @@
                 }    
                 
                 .sideBarText1 {
-                    padding-bottom: 20px;   
+                    padding-bottom: 50px;   
                     padding-right: 10%;             
                 }
 
             }      
+
+            .gif_cubo {
+                padding-top: 200px;
+            }
         }            
     }                         
      
@@ -37,23 +53,23 @@
     .sectionIndex {
         background-color: $background-primary-color;
         height: auto;
-        padding-bottom: 50px;
         padding-top: 200px;
 
 
         .descripIndex {
             text-align: center;
-            padding-top: 20px;
-            padding-bottom: 60px;
+            padding-bottom: 30px;
 
 
             .descripTitulo {
-                font-size: 4.7em;
+                font-size: 3.3em;
             }
         }
                  
         .lineasDescrip {
-            font-size: 1.2em;
+            font-size: 1.1em;
+            line-height: 30px;
+
         }
     }
     
@@ -62,8 +78,8 @@
         background-color: $background-primary-color;
         height:auto; 
         width: auto;
-        padding-top: 100px;
-        padding-bottom: 200px;
+        padding-top: 200px;
+        padding-bottom: 400px;
 
         .botonesArriba {    
             display: flex;
@@ -76,6 +92,7 @@
             .btn1 {
                 @extend %botonBase; 
                 background-color: $index_button_bg_color;
+                border-color: $border-color;
 
                 a {
                     text-decoration: none;  
@@ -83,87 +100,38 @@
 
                 &:hover {
                     color: black;
-                    background-color: $index_btnArriba_bg_color_hover;
+                    background-color: $index_btn_bg_color_hover;
                 }     
                
             }     
-            
-    
-            .btn2 {
-                @extend %botonBase; 
-                background-color: $index_button_bg_color;
-                width: 90px;
-
-                a {
-                    text-decoration: none;  
-                    color: $index_button_font_color;                 }
-
-                &:hover {
-                    color: black;
-                    background-color: $index_btnArriba_bg_color_hover;
-                }                    
-            }
+        
         }
 
-        .botonMedio {
-            @include flex-center;
-
-            .btn3 {
-                @extend %botonBase; 
-                background-color: $index_button_bg_color;
-
-                a {
-                    text-decoration: none;  
-                    color: $index_button_font_color;                 
-                }
-
-                &:hover {
-                    color: black;
-                    background-color: $index_btnArriba_bg_color_hover;
-                }     
-               
-            }
-        }
 
         .botonesAbajo {
             display: flex;
             justify-content: center;
             justify-content: space-evenly;
             font-weight: bold;
-            height: 130px;
+            height: 10px;
             text-decoration: none;
 
-            .boton1 {
+            .btn2 {
                 @extend %botonBase; 
                 background-color: $index_button_bg_color;
+                width: 130px;
 
                 a {
                     text-decoration: none;  
-                    color: $index_button_font_color; 
-                }
+                    color: $index_button_font_color;                 }
 
                 &:hover {
                     color: black;
-                    background-color: $index_btnAbajo_bg_color_hover;
-                }     
-               
+                    background-color: $index_btn_bg_color_hover;
+                }                    
             }
             
-            .boton2 {
-                @extend %botonBase; 
-                background-color: $index_button_bg_color;
-
-                a {
-                    text-decoration: none;  
-                    color: $index_button_font_color;                     
-                }
-
-                &:hover {
-                    color: black;
-                    background-color: $index_btnAbajo_bg_color_hover;
-                }     
-               
-            }
+            
         }
     }
    
@@ -171,26 +139,105 @@
     .indexProductos {
         .rowCards {
             .col1Cards {
+                height: auto;
+                padding-bottom: 20px;
+
                 .cardOne {
-                    background-color: rgb(2, 79, 2);
+                    color:black;
+                    background-color: #b3ba56;
+                    .card-body {
+                        font-size: 0.8rem;
+                        line-height: 25px;
+
+                        .card-title {
+                            font-size: 1rem;
+                        }
+                    }    
+
+                    .card-img-top {
+                        height: 220px;
+                        width: 100%;
+                    }
+
                     .primeraCardfoot {
-                        color:pink
+                        color: rgb(3, 70, 3);
+                        display: flex;  
+                        font-size: 0.9rem;                          
+                        justify-content: space-around;
+                        align-items: center;
+
+                        .btn_card {
+                            @extend %btn_card; 
+                        }
                     }
-                }
-            }   
+                    
+                }   
+            }
             .col2Cards {
+                height: auto;
+                padding-bottom: 20px;
+
                 .cardTwo {
-                    background-color: rgb(2, 79, 2);
-                    .segundaCardfoot {
-                        color:pink
+                    color:black;
+                    background-color: #b3ba56;
+                    .card-body {
+                        font-size: 0.8rem;
+                        line-height: 25px;
+                        .card-title {
+                            font-size: 1rem;
+                        }
                     }
+
+
+                    .card-img-top {
+                        height: 250px;
+                        width: 100%;
+                    }
+
+                    .segundaCardfoot {
+                        color: rgb(3, 70, 3);
+                        display: flex;  
+                        font-size: 0.9rem;                          
+                        justify-content: space-around;
+                        align-items: center;
+
+                        .btn_card {
+                            @extend %btn_card; 
+                        }
+                    }                
                 }
             }   
+
             .col3Cards {
-                .cardThree {
-                    background-color: rgb(2, 79, 2);
+                height: auto;
+                padding-bottom: 20px;
+                    .cardThree {
+                    color:black;
+                    background-color: #b3ba56;
+
+                    .card-body {
+                        font-size: 0.8rem;
+                        line-height: 25px;
+                        .card-title {
+                            font-size: 1rem;
+                        }
+                    }
+
+
+                    .card-img-top {
+                        height: 250px;
+                        width: 100%;
+                    }
+
                     .terceraCardfoot {
-                        color:pink
+                        color: rgb(3, 70, 3);
+                        display: flex;                            
+                        justify-content: space-around;
+                        align-items: center;
+
+                        .btn_card {
+                            @extend %btn_card; 
+                        }
                     }
                 }
             }            
@@ -201,14 +248,15 @@
             padding-bottom: map-get($estilos, paddingbottom_articleAbajoIndex);
             padding-top: map-get($estilos, paddingtop_articleAbajoIndex);
 
-        .articleAbajo1 {
+        .articleAbajo1 {            
             text-align: center;        
-            line-height: 63px;
-            color: olive;
+            line-height: 48px;
+            color: $font-index-ultima-sec;
         }
 
         .articleAbajo2 {
             text-align: center;                       
+            padding-bottom: 30px;
         } 
 
         .articleAbajo3 {
@@ -216,11 +264,19 @@
             align-content: center;
             text-align: center;                       
             justify-content: center;
-            color: olive;
+            color: $font-index-ultima-sec;
+            line-height: 30px;
         }
 
-        .lastImgIndex {
-            padding-top: map-get($estilos, paddingbottom_lastImgIndex);
+        .imagen_tierra {
+            display: flex;
+            justify-content: center;
+            padding-top: 200px;
+
+            .tierra_imagen {
+                height: 175px;
+                width: 175px;                    ;
+            }                                              
         }
     }     
 }

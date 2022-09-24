@@ -1,12 +1,38 @@
 %botonBase {
     padding-left: 10px;
     padding-right: 10px;
-    border-radius: 30px;
-    border-color: gray;
+    border-radius: 70px;
+    border-color: #777b3e;
     width: auto;
-    height: 70px;
-    font-size: 1em;
+    height: 50px;
+    font-size: 0.9em;
     display: inline;
     justify-content: center;
     align-items: center;        
+}
+
+%btn_card {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 70px;
+    border-color: #777b3e;
+    width: auto;
+    height: auto;
+    font-size: 0.7rem;
+    display: inline;
+    justify-content: center;
+    align-items: center;     
+}
+
+%btn_formulario {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 70px;
+    border-color: #777b3e;
+    width: auto;
+    height: auto;
+    font-size: 0.7rem;
+    display: inline;
+    justify-content: center;
+    align-items: center;     
 }

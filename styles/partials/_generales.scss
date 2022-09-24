@@ -1,10 +1,16 @@
-*{
+*{    
     margin: 0;
     padding: 0;
 }
 
+@font-face {
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
 body {
-    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-family: 'Ubuntu', sans-serif;
     color: rgb(216, 216, 216);
     /*font-size: 1.2rem needed;*/
     min-height: 100%;
@@ -17,13 +23,14 @@ body {
 .positionButton {
     display: flex;
     justify-content: center;
-    width: 150px;
+    letter-spacing: 2px;
+    width: 130px;
     height: auto;
-    background-color: #b3ba56;
+    background-color: #777b3e;
     position: fixed;
     bottom: 70px;
     right: 7px;
-    color: rgb(9, 55, 2);
+    color: rgb(252, 252, 252);
     font-weight: bold;
     padding: 5px 2px 5px 0px;
     font-size: 1rem;
@@ -47,14 +54,14 @@ body {
     }
 }
 
-@keyframes pbutton {
-    animation-duration: 4s;
-    animation-timing-function: ease-in;
-    0% {background-color: rgb(4, 88, 31);}
-    50% {background-color: rgb(5, 83, 17); transform: scale(1, 1);}
-    75% {background-color: rgb(9, 76, 53); transform: rotate(4deg);}
-    75% {color: rgb(4, 86, 33)};
-}
+// @keyframes pbutton {
+//     animation-duration: 4s;
+//     animation-timing-function: ease-in;
+//     0% {background-color: rgb(4, 88, 31);}
+//     50% {background-color: rgb(5, 83, 17); transform: scale(1, 1);}
+//     75% {background-color: rgb(9, 76, 53); transform: rotate(4deg);}
+//     75% {color: rgb(4, 86, 33)};
+// }
 
 @media (min-width: 760px) {
     .positionButton {
@@ -88,13 +95,13 @@ body {
         }
     }
     
-    @keyframes pbutton {
-        animation-duration: 4s;
-        animation-timing-function: ease-in;
-        0% {background-color: rgb(4, 88, 31);}
-        50% {background-color: rgb(5, 83, 17); transform: scale(1, 1);}
-        75% {background-color: rgb(9, 76, 53); transform: rotate(4deg);}
-        75% {color: rgb(4, 86, 33)};
-    }
+    // @keyframes pbutton {
+    //     animation-duration: 4s;
+    //     animation-timing-function: ease-in;
+    //     0% {background-color: rgb(4, 88, 31);}
+    //     50% {background-color: rgb(5, 83, 17); transform: scale(1, 1);}
+    //     75% {background-color: rgb(9, 76, 53); transform: rotate(4deg);}
+    //     75% {color: rgb(4, 86, 33)};
+    // }
     
 }

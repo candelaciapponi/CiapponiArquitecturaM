@@ -33,11 +33,23 @@
     }
 }
 
-@media (min-width: 760px) {
+@media (min-width: 768px) {
 
     .header {
         padding-right: 30px;
         font-size: 30px;
+
+        .navbar {
+            .container-fluid {
+                .nav-item {
+                    ul li {
+
+                        font-size: 1.2rem;
+
+                    }
+                }
+            }
+        }
     }
 
 }

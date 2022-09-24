@@ -2,33 +2,31 @@ html {
   min-height: 100%;
 }
 
-@media (min-width: 760px) {
+@media (min-width: 768px) {
   .containerIndex .articleIndex .indexCuerpo {
     text-align: start;
   }
   .containerIndex .articleIndex .indexCuerpo .sideBar0 .sideBarText {
-    padding-top: 300px;
-    padding-bottom: 400px;
-    font-size: 1.5em;
+    padding-top: 100px;
+    font-size: 1.1em;
   }
   .containerIndex .articleIndex .indexCuerpo .sideBar0 .sideBarText1 {
-    padding-top: 600px;
+    padding-top: 500px;
     padding-bottom: 700px;
-    font-size: 1.4em;
+    font-size: 1.1em;
   }
   .containerIndex .articleIndex .indexCuerpo .sideBar0 .sideBarText2 {
-    padding-top: 600px;
+    padding-top: 350px;
     padding-bottom: 100px;
-    font-size: 1.4em;
+    font-size: 1.1em;
   }
-  .containerIndex .articleIndex .indexCuerpo .imagenesCuerpo .indexImg {
-    padding-bottom: 100px;
-    height: 700px;
-    width: 100%;
+  .containerIndex .articleIndex .indexCuerpo .gif_cubo .cubo_imagen {
+    height: 450px;
+    width: 450px;
   }
   .containerIndex .sectionIndex {
     padding-bottom: 250px;
-    padding-top: 200px;
+    padding-top: 150px;
   }
   .containerIndex .sectionIndex .descripIndex {
     text-align: center;
@@ -37,23 +35,37 @@ html {
   }
   .containerIndex .sectionIndex .lineasDescrip {
     padding-top: 100px;
-    padding-bottom: 200px;
+    padding-bottom: 150px;
     color: rgba(240, 240, 240, 0.571);
   }
   .containerIndex .sectionIndex .lineasDescrip .descripTexto {
-    font-size: 2.2em;
-  }
-  .containerIndex .sectionIndex .lineasDescrip .descripTexto1 {
-    font-size: 2.2em;
+    font-size: 1.9em;
+    line-height: 55px;
   }
   .containerIndex .sectionIndex .lineasDescrip .descripTexto2 {
-    font-size: 2.2em;
+    font-size: 1.9em;
+    line-height: 55px;
   }
-  .containerIndex .botonesDiv .botonesArriba .btn2 {
-    width: 150px !important;
+  .containerIndex .botonesDiv {
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    height: auto;
+    width: auto;
+    padding-top: 200px;
+    padding-bottom: 400px;
   }
-  .containerIndex .botonesDiv .botonesAbajo .boton1 {
-    width: 150px !important;
+  .containerIndex .botonesDiv .botonesArriba {
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+    height: 130px;
+    text-decoration: none;
+  }
+  .containerIndex .botonesDiv .botonesArriba .btn1 {
+    background-color: red;
+  }
+  .containerIndex .botonesDiv .botonesArriba #casasboton {
+    width: 120px;
   }
   .containerIndex .indexProductos {
     padding-top: 400px;
@@ -89,11 +101,12 @@ html {
     align-items: center;
   }
   .containerIndex .articleAbajo .articleAbajo1 {
-    font-size: 2rem;
+    font-size: 1.2rem;
     color: gray;
   }
   .containerIndex .articleAbajo .articleAbajo3 {
-    font-size: 2rem;
+    font-size: 1.2rem;
+    line-height: 40px;
     color: gray;
   }
   .containerIndex .articleAbajo .lastImgIndex {
@@ -104,14 +117,151 @@ html {
     width: 250px;
   }
 }
-.containerIndex .botonesDiv .botonesAbajo .boton2, .containerIndex .botonesDiv .botonesAbajo .boton1, .containerIndex .botonesDiv .botonMedio .btn3, .containerIndex .botonesDiv .botonesArriba .btn2, .containerIndex .botonesDiv .botonesArriba .btn1 {
+@media (min-width: 1200px) {
+  .containerIndex .articleIndex .indexCuerpo {
+    text-align: start;
+  }
+  .containerIndex .articleIndex .indexCuerpo .sideBar0 .sideBarText {
+    padding-top: 200px;
+    font-size: 1.1em;
+  }
+  .containerIndex .articleIndex .indexCuerpo .sideBar0 .sideBarText1 {
+    padding-top: 700px;
+    padding-bottom: 700px;
+    font-size: 1.1em;
+  }
+  .containerIndex .articleIndex .indexCuerpo .sideBar0 .sideBarText2 {
+    padding-top: 650px;
+    padding-bottom: 100px;
+    font-size: 1.1em;
+  }
+  .containerIndex .articleIndex .indexCuerpo .gif_cubo .cubo_imagen {
+    height: 450px;
+    width: 450px;
+  }
+  .containerIndex .sectionIndex {
+    padding-bottom: 250px;
+    padding-top: 150px;
+  }
+  .containerIndex .sectionIndex .descripIndex {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 60px;
+  }
+  .containerIndex .sectionIndex .lineasDescrip {
+    padding-top: 100px;
+    padding-bottom: 150px;
+    color: rgba(240, 240, 240, 0.571);
+  }
+  .containerIndex .sectionIndex .lineasDescrip .descripTexto {
+    font-size: 1.9em;
+    line-height: 55px;
+  }
+  .containerIndex .sectionIndex .lineasDescrip .descripTexto2 {
+    font-size: 1.9em;
+    line-height: 55px;
+  }
+  .containerIndex .botonesDiv {
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    height: auto;
+    width: auto;
+    padding-top: 200px;
+    padding-bottom: 400px;
+  }
+  .containerIndex .botonesDiv .botonesArriba .btn1 {
+    font-size: 1.8rem;
+  }
+  .containerIndex .botonesDiv .botonesArriba #botoncasas {
+    width: 120px;
+  }
+  .containerIndex .botonesDiv .botonesAbajo .btn2 {
+    font-size: 1.6rem;
+  }
+  .containerIndex .indexProductos {
+    padding-top: 400px;
+    padding-bottom: 300px;
+  }
+  .containerIndex .indexProductos .rowCards .col1Cards .cardOne {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(2, 79, 2);
+  }
+  .containerIndex .indexProductos .rowCards .col1Cards .cardOne .primeraCardfoot {
+    color: pink;
+  }
+  .containerIndex .indexProductos .rowCards .col2Cards .cardTwo {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(2, 79, 2);
+  }
+  .containerIndex .indexProductos .rowCards .col2Cards .cardTwo .segundaCardfoot {
+    color: pink;
+  }
+  .containerIndex .indexProductos .rowCards .col3Cards .cardThree {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(2, 79, 2);
+  }
+  .containerIndex .indexProductos .rowCards .col3Cards .cardThree .terceraCardfoot {
+    color: pink;
+  }
+  .containerIndex .articleAbajo {
+    padding-bottom: 300px;
+    flex-direction: row;
+    align-items: center;
+  }
+  .containerIndex .articleAbajo .articleAbajo1 {
+    font-size: 1.2rem;
+    color: gray;
+  }
+  .containerIndex .articleAbajo .articleAbajo3 {
+    font-size: 1.2rem;
+    line-height: 40px;
+    color: gray;
+  }
+  .containerIndex .articleAbajo .lastImgIndex {
+    display: flex;
+    margin-left: 550px;
+    padding-top: 180px;
+    height: 400px;
+    width: 250px;
+  }
+}
+.containerIndex .botonesDiv .botonesAbajo .btn2, .containerIndex .botonesDiv .botonesArriba .btn1 {
   padding-left: 10px;
   padding-right: 10px;
-  border-radius: 30px;
-  border-color: gray;
+  border-radius: 70px;
+  border-color: #777b3e;
   width: auto;
-  height: 70px;
-  font-size: 1em;
+  height: 50px;
+  font-size: 0.9em;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerIndex .indexProductos .rowCards .col3Cards .cardThree .terceraCardfoot .btn_card, .containerIndex .indexProductos .rowCards .col2Cards .cardTwo .segundaCardfoot .btn_card, .containerIndex .indexProductos .rowCards .col1Cards .cardOne .primeraCardfoot .btn_card {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 70px;
+  border-color: #777b3e;
+  width: auto;
+  height: auto;
+  font-size: 0.7rem;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionContacto .formulario .boton_formulario {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 70px;
+  border-color: #777b3e;
+  width: auto;
+  height: auto;
+  font-size: 0.7rem;
   display: inline;
   justify-content: center;
   align-items: center;
@@ -122,8 +272,12 @@ html {
   padding: 0;
 }
 
+@font-face {
+  @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+  font-family: "Ubuntu", sans-serif;
+}
 body {
-  font-family: "Edu NSW ACT Foundation", cursive;
+  font-family: "Ubuntu", sans-serif;
   color: rgb(216, 216, 216);
   /*font-size: 1.2rem needed;*/
   min-height: 100%;
@@ -134,13 +288,14 @@ body {
 .positionButton {
   display: flex;
   justify-content: center;
-  width: 150px;
+  letter-spacing: 2px;
+  width: 130px;
   height: auto;
-  background-color: #b3ba56;
+  background-color: #777b3e;
   position: fixed;
   bottom: 70px;
   right: 7px;
-  color: rgb(9, 55, 2);
+  color: rgb(252, 252, 252);
   font-weight: bold;
   padding: 5px 2px 5px 0px;
   font-size: 1rem;
@@ -166,47 +321,6 @@ body {
           animation-timing-function: ease-in;
 }
 
-@-webkit-keyframes pbutton {
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
-  0% {
-    background-color: rgb(4, 88, 31);
-  }
-  50% {
-    background-color: rgb(5, 83, 17);
-    transform: scale(1, 1);
-  }
-  75% {
-    background-color: rgb(9, 76, 53);
-    transform: rotate(4deg);
-  }
-  75% {
-    color: rgb(4, 86, 33);
-  }
-}
-
-@keyframes pbutton {
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
-  0% {
-    background-color: rgb(4, 88, 31);
-  }
-  50% {
-    background-color: rgb(5, 83, 17);
-    transform: scale(1, 1);
-  }
-  75% {
-    background-color: rgb(9, 76, 53);
-    transform: rotate(4deg);
-  }
-  75% {
-    color: rgb(4, 86, 33);
-  }
-}
 @media (min-width: 760px) {
   .positionButton {
     display: flex;
@@ -240,46 +354,6 @@ body {
             animation-iteration-count: infinite;
     -webkit-animation-timing-function: ease-in;
             animation-timing-function: ease-in;
-  }
-  @-webkit-keyframes pbutton {
-    -webkit-animation-duration: 4s;
-            animation-duration: 4s;
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-    0% {
-      background-color: rgb(4, 88, 31);
-    }
-    50% {
-      background-color: rgb(5, 83, 17);
-      transform: scale(1, 1);
-    }
-    75% {
-      background-color: rgb(9, 76, 53);
-      transform: rotate(4deg);
-    }
-    75% {
-      color: rgb(4, 86, 33);
-    }
-  }
-  @keyframes pbutton {
-    -webkit-animation-duration: 4s;
-            animation-duration: 4s;
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-    0% {
-      background-color: rgb(4, 88, 31);
-    }
-    50% {
-      background-color: rgb(5, 83, 17);
-      transform: scale(1, 1);
-    }
-    75% {
-      background-color: rgb(9, 76, 53);
-      transform: rotate(4deg);
-    }
-    75% {
-      color: rgb(4, 86, 33);
-    }
   }
 }
 .header {
@@ -308,10 +382,13 @@ body {
   color: white;
 }
 
-@media (min-width: 760px) {
+@media (min-width: 768px) {
   .header {
     padding-right: 30px;
     font-size: 30px;
+  }
+  .header .navbar .container-fluid .nav-item ul li {
+    font-size: 1.2rem;
   }
 }
 .footer {
@@ -328,7 +405,7 @@ body {
   background-color: rgb(0, 0, 0);
 }
 .containerIndex .articleIndex {
-  font-size: 2em;
+  font-size: 2rem;
   text-align: center;
 }
 .containerIndex .articleIndex .indexCuerpo .imagenesCuerpo .indexImg {
@@ -336,9 +413,18 @@ body {
   height: auto;
   max-width: auto;
 }
+.containerIndex .articleIndex .indexCuerpo .gif_cubo {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.containerIndex .articleIndex .indexCuerpo .gif_cubo .cubo_imagen {
+  height: 175px;
+  width: 175px;
+}
 .containerIndex .articleIndex .indexCuerpo .sideBar0 {
   font-size: 1.4rem;
-  color: olive;
+  color: rgb(119, 123, 62);
   padding-bottom: 50px;
   padding-top: 70px;
 }
@@ -347,33 +433,35 @@ body {
   padding-right: 10%;
 }
 .containerIndex .articleIndex .indexCuerpo .sideBar0 .sideBarText1 {
-  padding-bottom: 20px;
+  padding-bottom: 50px;
   padding-right: 10%;
+}
+.containerIndex .articleIndex .indexCuerpo .gif_cubo {
+  padding-top: 200px;
 }
 .containerIndex .sectionIndex {
   background-color: rgb(0, 0, 0);
   height: auto;
-  padding-bottom: 50px;
   padding-top: 200px;
 }
 .containerIndex .sectionIndex .descripIndex {
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 .containerIndex .sectionIndex .descripIndex .descripTitulo {
-  font-size: 4.7em;
+  font-size: 3.3em;
 }
 .containerIndex .sectionIndex .lineasDescrip {
-  font-size: 1.2em;
+  font-size: 1.1em;
+  line-height: 30px;
 }
 .containerIndex .botonesDiv {
   align-items: center;
   background-color: rgb(0, 0, 0);
   height: auto;
   width: auto;
-  padding-top: 100px;
-  padding-bottom: 200px;
+  padding-top: 200px;
+  padding-bottom: 400px;
 }
 .containerIndex .botonesDiv .botonesArriba {
   display: flex;
@@ -383,91 +471,113 @@ body {
   text-decoration: none;
 }
 .containerIndex .botonesDiv .botonesArriba .btn1 {
-  background-color: rgb(2, 2, 35);
+  background-color: rgb(0, 0, 0);
+  border-color: solid 8px rgb(46, 247, 69);
 }
 .containerIndex .botonesDiv .botonesArriba .btn1 a {
   text-decoration: none;
-  color: rgb(9, 186, 20);
+  color: #777b3e;
 }
 .containerIndex .botonesDiv .botonesArriba .btn1:hover {
   color: black;
-  background-color: rgb(29, 29, 133);
-}
-.containerIndex .botonesDiv .botonesArriba .btn2 {
-  background-color: rgb(2, 2, 35);
-  width: 90px;
-}
-.containerIndex .botonesDiv .botonesArriba .btn2 a {
-  text-decoration: none;
-  color: rgb(9, 186, 20);
-}
-.containerIndex .botonesDiv .botonesArriba .btn2:hover {
-  color: black;
-  background-color: rgb(29, 29, 133);
-}
-.containerIndex .botonesDiv .botonMedio {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.containerIndex .botonesDiv .botonMedio .btn3 {
-  background-color: rgb(2, 2, 35);
-}
-.containerIndex .botonesDiv .botonMedio .btn3 a {
-  text-decoration: none;
-  color: rgb(9, 186, 20);
-}
-.containerIndex .botonesDiv .botonMedio .btn3:hover {
-  color: black;
-  background-color: rgb(29, 29, 133);
+  background-color: rgb(58, 77, 19);
 }
 .containerIndex .botonesDiv .botonesAbajo {
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
   font-weight: bold;
-  height: 130px;
+  height: 10px;
   text-decoration: none;
 }
-.containerIndex .botonesDiv .botonesAbajo .boton1 {
-  background-color: rgb(2, 2, 35);
+.containerIndex .botonesDiv .botonesAbajo .btn2 {
+  background-color: rgb(0, 0, 0);
+  width: 130px;
 }
-.containerIndex .botonesDiv .botonesAbajo .boton1 a {
+.containerIndex .botonesDiv .botonesAbajo .btn2 a {
   text-decoration: none;
-  color: rgb(9, 186, 20);
+  color: #777b3e;
 }
-.containerIndex .botonesDiv .botonesAbajo .boton1:hover {
+.containerIndex .botonesDiv .botonesAbajo .btn2:hover {
   color: black;
   background-color: rgb(58, 77, 19);
 }
-.containerIndex .botonesDiv .botonesAbajo .boton2 {
-  background-color: rgb(2, 2, 35);
-}
-.containerIndex .botonesDiv .botonesAbajo .boton2 a {
-  text-decoration: none;
-  color: rgb(9, 186, 20);
-}
-.containerIndex .botonesDiv .botonesAbajo .boton2:hover {
-  color: black;
-  background-color: rgb(58, 77, 19);
+.containerIndex .indexProductos .rowCards .col1Cards {
+  height: auto;
+  padding-bottom: 20px;
 }
 .containerIndex .indexProductos .rowCards .col1Cards .cardOne {
-  background-color: rgb(2, 79, 2);
+  color: black;
+  background-color: #b3ba56;
+}
+.containerIndex .indexProductos .rowCards .col1Cards .cardOne .card-body {
+  font-size: 0.8rem;
+  line-height: 25px;
+}
+.containerIndex .indexProductos .rowCards .col1Cards .cardOne .card-body .card-title {
+  font-size: 1rem;
+}
+.containerIndex .indexProductos .rowCards .col1Cards .cardOne .card-img-top {
+  height: 220px;
+  width: 100%;
 }
 .containerIndex .indexProductos .rowCards .col1Cards .cardOne .primeraCardfoot {
-  color: pink;
+  color: rgb(3, 70, 3);
+  display: flex;
+  font-size: 0.9rem;
+  justify-content: space-around;
+  align-items: center;
+}
+.containerIndex .indexProductos .rowCards .col2Cards {
+  height: auto;
+  padding-bottom: 20px;
 }
 .containerIndex .indexProductos .rowCards .col2Cards .cardTwo {
-  background-color: rgb(2, 79, 2);
+  color: black;
+  background-color: #b3ba56;
+}
+.containerIndex .indexProductos .rowCards .col2Cards .cardTwo .card-body {
+  font-size: 0.8rem;
+  line-height: 25px;
+}
+.containerIndex .indexProductos .rowCards .col2Cards .cardTwo .card-body .card-title {
+  font-size: 1rem;
+}
+.containerIndex .indexProductos .rowCards .col2Cards .cardTwo .card-img-top {
+  height: 250px;
+  width: 100%;
 }
 .containerIndex .indexProductos .rowCards .col2Cards .cardTwo .segundaCardfoot {
-  color: pink;
+  color: rgb(3, 70, 3);
+  display: flex;
+  font-size: 0.9rem;
+  justify-content: space-around;
+  align-items: center;
+}
+.containerIndex .indexProductos .rowCards .col3Cards {
+  height: auto;
+  padding-bottom: 20px;
 }
 .containerIndex .indexProductos .rowCards .col3Cards .cardThree {
-  background-color: rgb(2, 79, 2);
+  color: black;
+  background-color: #b3ba56;
+}
+.containerIndex .indexProductos .rowCards .col3Cards .cardThree .card-body {
+  font-size: 0.8rem;
+  line-height: 25px;
+}
+.containerIndex .indexProductos .rowCards .col3Cards .cardThree .card-body .card-title {
+  font-size: 1rem;
+}
+.containerIndex .indexProductos .rowCards .col3Cards .cardThree .card-img-top {
+  height: 250px;
+  width: 100%;
 }
 .containerIndex .indexProductos .rowCards .col3Cards .cardThree .terceraCardfoot {
-  color: pink;
+  color: rgb(3, 70, 3);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .containerIndex .articleAbajo {
   padding-bottom: 50px;
@@ -475,11 +585,12 @@ body {
 }
 .containerIndex .articleAbajo .articleAbajo1 {
   text-align: center;
-  line-height: 63px;
+  line-height: 48px;
   color: olive;
 }
 .containerIndex .articleAbajo .articleAbajo2 {
   text-align: center;
+  padding-bottom: 30px;
 }
 .containerIndex .articleAbajo .articleAbajo3 {
   display: flex;
@@ -487,9 +598,16 @@ body {
   text-align: center;
   justify-content: center;
   color: olive;
+  line-height: 30px;
 }
-.containerIndex .articleAbajo .lastImgIndex {
-  padding-top: 180px;
+.containerIndex .articleAbajo .imagen_tierra {
+  display: flex;
+  justify-content: center;
+  padding-top: 200px;
+}
+.containerIndex .articleAbajo .imagen_tierra .tierra_imagen {
+  height: 175px;
+  width: 175px;
 }
 
 .articleDeptos {
@@ -506,17 +624,18 @@ body {
 
 .section_dto_uno {
   background-color: rgb(0, 0, 0);
-  padding-top: 160px;
+  padding-top: 100px;
 }
 .section_dto_uno .sideBar0 .lista_seccion {
+  font-size: 1.4rem;
   text-align: center;
-  color: rgb(180, 180, 5);
-  padding-bottom: 50px;
+  color: rgb(119, 123, 62);
+  padding-bottom: 90px;
 }
 .section_dto_uno .imagenesCuerpo {
   display: flex;
   justify-content: center;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 .section_dto_uno .imagenesCuerpo .indexImg {
   display: flex;
@@ -531,26 +650,38 @@ body {
 
 .section_dto_mid {
   background-color: rgb(0, 0, 0);
+  padding-top: 80px;
 }
 .section_dto_mid .texto {
+  font-size: 1.3rem;
   text-align: center;
+  justify-content: center;
+  line-height: 35px;
+}
+
+.gota {
+  background-color: rgb(0, 0, 0);
+  padding-top: 200px;
+}
+.gota .gota_medio {
+  display: flex;
   justify-content: center;
 }
 
 .section_dto_dos {
-  padding-top: 300px;
+  padding-top: 200px;
   padding-bottom: 100px;
   background-color: rgb(0, 0, 0);
-  color: rgb(180, 180, 5);
+  color: olive;
 }
 .section_dto_dos p {
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
-  line-height: 100px;
+  line-height: 50px;
 }
 .section_dto_dos .imagenesCuerpoDos {
-  padding-top: 30px;
+  padding-top: 80px;
   display: flex;
   justify-content: center;
 }
@@ -568,9 +699,98 @@ body {
 }
 .articleCasas .container-fluid .tituloCasas {
   display: flex;
+  justify-content: start;
+  font-size: 2rem;
+}
+
+.section_casas_uno {
+  background-color: rgb(0, 0, 0);
+}
+.section_casas_uno .sideBar0 {
+  font-size: 1.4rem;
+  text-align: center;
+  color: rgb(119, 123, 62);
+  padding-bottom: 90px;
+}
+.section_casas_uno .sideBar0 .lista_seccion {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.section_casas_uno .imagenesCuerpo {
+  padding-bottom: 200px;
+  display: flex;
   justify-content: center;
 }
 
+.section_casas_mid {
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+}
+.section_casas_mid .imagenesCuerpo2 {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.section_casas_dos {
+  background-color: rgb(0, 0, 0);
+}
+.section_casas_dos .article_casas_txt {
+  color: olive;
+  text-align: center;
+  padding-bottom: 100px;
+}
+.section_casas_dos .imagenesCuerpo3 {
+  padding-bottom: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .articleCasas .container-fluid .tituloCasas {
+    font-size: 3.2rem;
+  }
+  .section_casas_uno {
+    padding-top: 300px;
+    padding-bottom: 300px;
+  }
+  .section_casas_uno .sideBar0 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .section_casas_uno .sideBar0 .lista_seccion {
+    padding-bottom: 100px;
+  }
+  .section_casas_uno .imagenesCuerpo {
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+  }
+  .section_casas_mid {
+    font-size: 2rem;
+    padding-bottom: 200px;
+  }
+  .section_casas_mid .imagenesCuerpo2 {
+    padding-top: 300px;
+  }
+  .section_casas_dos .article_casas_txt {
+    display: flex;
+    flex-direction: column;
+    color: olive;
+    text-align: center;
+    padding-bottom: 100px;
+    justify-content: center;
+  }
+  .section_casas_dos .imagenesCuerpo3 {
+    padding-bottom: 200px;
+    display: flex;
+    justify-content: center;
+  }
+  .section_casas_dos .imagenesCuerpo3 .gif_uno {
+    padding-top: 50px;
+    height: 300px;
+    width: 220px;
+  }
+}
 .articleOtros {
   background-color: rgb(0, 0, 0);
 }
@@ -578,23 +798,33 @@ body {
   width: 1100px;
   height: auto;
 }
-.articleOtros .tituloOtros .text-end .blockquote {
+.articleOtros .container-fluid .tituloOtros .text-end .blockquote {
   font-size: 3em;
 }
-.articleOtros .tituloOtros .text-end .lead {
-  font-size: 2em;
+.articleOtros .container-fluid .tituloOtros .text-end .lead {
+  font-size: 1.2em;
   color: #8d8d8a;
+}
+
+.section_ultima {
+  background-color: black;
+}
+.section_ultima .section_txt {
+  padding-top: 300px;
+}
+.section_ultima .imagenesCuerpoDos {
+  padding-top: 100px;
+}
+.section_ultima .imagenesCuerpoDos .gif_op {
+  padding-top: 100px;
 }
 
 .sectionContacto {
   background-color: rgb(0, 0, 0);
 }
-.sectionContacto form {
-  font-size: 25px;
-}
 
 #text-area {
-  width: 500px;
+  width: 300px;
   height: 200px;
 }
 
@@ -608,10 +838,11 @@ body {
 }
 .articleQuienes .quienesTitulo {
   font-size: 4em;
-  padding-top: 100px;
+  padding-top: 70px;
 }
 .articleQuienes .quienesDesc {
-  font-size: 35px;
+  font-size: 1.4em;
+  line-height: 35px;
   padding-top: 80px;
   padding-bottom: 70px;
 }
@@ -624,14 +855,14 @@ body {
 }
 .sectionQuienes .filoTitulo {
   font-size: 40px;
-  padding-top: 140px;
-  color: #595957;
+  padding-top: 200px;
+  color: rgb(240, 240, 240);
 }
 .sectionQuienes .filoDesc {
-  font-size: 30px;
+  font-size: 1.3rem;
   padding-top: 60px;
-  line-height: 1.8;
-  color: rgb(103, 101, 101);
+  line-height: 1.3;
+  color: rgb(204, 201, 201);
 }
 
 .main_quienes {
@@ -650,14 +881,41 @@ body {
   line-height: 32px;
   justify-content: center;
 }
+.main_quienes .imagenesCuerpo {
+  padding-top: 100px;
+}
+
+.quienesImagen {
+  background-color: rgb(0, 0, 0);
+}
+.quienesImagen .quienesImg {
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.main_quienes .main_imagen .main_img {
+  height: 250px;
+  width: 100%;
+}
+.main_quienes .side_quienes .sideBarText {
+  padding-top: 50px;
+  text-align: center;
+  color: rgb(119, 123, 62);
+}
 
 * {
   margin: 0;
   padding: 0;
 }
 
+@font-face {
+  @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+  font-family: "Ubuntu", sans-serif;
+}
 body {
-  font-family: "Edu NSW ACT Foundation", cursive;
+  font-family: "Ubuntu", sans-serif;
   color: rgb(216, 216, 216);
   /*font-size: 1.2rem needed;*/
   min-height: 100%;
@@ -668,13 +926,14 @@ body {
 .positionButton {
   display: flex;
   justify-content: center;
-  width: 150px;
+  letter-spacing: 2px;
+  width: 130px;
   height: auto;
-  background-color: #b3ba56;
+  background-color: #777b3e;
   position: fixed;
   bottom: 70px;
   right: 7px;
-  color: rgb(9, 55, 2);
+  color: rgb(252, 252, 252);
   font-weight: bold;
   padding: 5px 2px 5px 0px;
   font-size: 1rem;
@@ -700,26 +959,6 @@ body {
           animation-timing-function: ease-in;
 }
 
-@keyframes pbutton {
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
-  0% {
-    background-color: rgb(4, 88, 31);
-  }
-  50% {
-    background-color: rgb(5, 83, 17);
-    transform: scale(1, 1);
-  }
-  75% {
-    background-color: rgb(9, 76, 53);
-    transform: rotate(4deg);
-  }
-  75% {
-    color: rgb(4, 86, 33);
-  }
-}
 @media (min-width: 760px) {
   .positionButton {
     display: flex;
@@ -753,45 +992,5 @@ body {
             animation-iteration-count: infinite;
     -webkit-animation-timing-function: ease-in;
             animation-timing-function: ease-in;
-  }
-  @-webkit-keyframes pbutton {
-    -webkit-animation-duration: 4s;
-            animation-duration: 4s;
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-    0% {
-      background-color: rgb(4, 88, 31);
-    }
-    50% {
-      background-color: rgb(5, 83, 17);
-      transform: scale(1, 1);
-    }
-    75% {
-      background-color: rgb(9, 76, 53);
-      transform: rotate(4deg);
-    }
-    75% {
-      color: rgb(4, 86, 33);
-    }
-  }
-  @keyframes pbutton {
-    -webkit-animation-duration: 4s;
-            animation-duration: 4s;
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-    0% {
-      background-color: rgb(4, 88, 31);
-    }
-    50% {
-      background-color: rgb(5, 83, 17);
-      transform: scale(1, 1);
-    }
-    75% {
-      background-color: rgb(9, 76, 53);
-      transform: rotate(4deg);
-    }
-    75% {
-      color: rgb(4, 86, 33);
-    }
   }
 }/*# sourceMappingURL=styles.css.map */

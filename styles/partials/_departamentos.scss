@@ -16,20 +16,21 @@
 
 .section_dto_uno {
     background-color: $background-primary-color;
-    padding-top: 160px;
+    padding-top: 100px;
 
     .sideBar0 {
         .lista_seccion {
+            font-size: 1.4rem;
             text-align: center;
-            color: rgb(180, 180, 5);
-            padding-bottom: 50px;
+            color: $font-terciary-color;
+            padding-bottom: 90px;
         }
     }
 
     .imagenesCuerpo {
         display: flex;
         justify-content: center;
-        padding-bottom: 100px;
+        padding-bottom: 50px;
 
         .indexImg {
             display: flex;
@@ -48,29 +49,42 @@
 
 .section_dto_mid {
     background-color: $background-primary-color;
+    padding-top: 80px;
     .texto {
+        font-size: 1.3rem;        
         text-align: center;
         justify-content: center;
+        line-height: 35px;
     }
 
 }
 
+.gota {
+    background-color: $background-primary-color;
+    padding-top: 200px;
+    
+    .gota_medio {
+        display: flex;
+        justify-content: center;        
+    }
+}
+
 
 .section_dto_dos {
-    padding-top: 300px;
+    padding-top: 200px;
     padding-bottom: 100px;
     background-color: $background-primary-color;
-    color: rgb(180, 180, 5);
+    color: $font-index-ultima-sec;
 
     p {
         padding-left: 20px;
         padding-right: 20px;
         text-align: center;    
-        line-height: 100px;
+        line-height: 50px;
     }
 
     .imagenesCuerpoDos {
-        padding-top: 30px;
+        padding-top: 80px;
         display: flex;
         justify-content: center;
         .gif_uno {

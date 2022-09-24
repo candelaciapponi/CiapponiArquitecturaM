@@ -9,10 +9,11 @@
 
     .quienesTitulo {
         font-size: 4em;
-        padding-top: 100px;   
+        padding-top: 70px;   
     }
     .quienesDesc {
-        font-size: 35px;
+        font-size: 1.4em;
+        line-height: 35px;
         padding-top: 80px;
         padding-bottom: 70px;
     }   
@@ -27,15 +28,15 @@
     
     .filoTitulo {
         font-size: 40px;
-        padding-top: 140px;    
-        color: #595957;
+        padding-top: 200px;    
+        color: $font-primary-color;
     }
     
     .filoDesc {
-        font-size: 30px;
+        font-size: 1.3rem;
         padding-top: 60px;    
-        line-height: 1.8;
-        color: rgb(103, 101, 101);
+        line-height: 1.3;
+        color: $font-secondary-color;
     }    
 }
 
@@ -59,5 +60,40 @@
         line-height: 32px;
         justify-content: center;
     }
+
+    .imagenesCuerpo {
+        padding-top: 100px;
+    }
 }
+
+
+.quienesImagen {
+    background-color: $background-primary-color;
+    .quienesImg {    
+        display: flex;
+        justify-content: center;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+}
+
+.main_quienes {
+    .main_imagen {
+        .main_img {
+            height: 250px;
+            width: 100%;
+        }
+    }
+
+    .side_quienes {
+        .sideBarText {
+            padding-top: 50px;
+            text-align: center;
+            color: $font-terciary-color;
+        }
+    }
+}
+
+
 
