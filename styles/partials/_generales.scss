@@ -49,19 +49,20 @@ body {
         padding-right: 10px;
         animation-name: pbutton;
         animation-duration: 6s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in;
+        animation-timing-function: ease-in;       
+    }
+
+    @keyframes pbutton {
+        0% { background-color: rgb(4, 88, 31); }
+        50% { background-color: rgb(5, 83, 17); transform: scale(1, 1); }
+        75% { background-color: rgb(9, 76, 53); transform: rotate(4deg); }
+        85% { color: rgb(4, 86, 33); }                
     }
 }
 
-// @keyframes pbutton {
-//     animation-duration: 4s;
-//     animation-timing-function: ease-in;
-//     0% {background-color: rgb(4, 88, 31);}
-//     50% {background-color: rgb(5, 83, 17); transform: scale(1, 1);}
-//     75% {background-color: rgb(9, 76, 53); transform: rotate(4deg);}
-//     75% {color: rgb(4, 86, 33)};
-// }
+
+
+
 
 @media (min-width: 760px) {
     .positionButton {
@@ -92,16 +93,14 @@ body {
             animation-duration: 6s;
             animation-iteration-count: infinite;
             animation-timing-function: ease-in;
+        }  
+
+
+        @keyframes pbutton {
+            0% { background-color: rgb(4, 88, 31); }
+            50% { background-color: rgb(5, 83, 17); transform: scale(1, 1); }
+            75% { background-color: rgb(9, 76, 53); transform: rotate(4deg); }
+            85% { color: rgb(4, 86, 33); }                
         }
     }
-    
-    // @keyframes pbutton {
-    //     animation-duration: 4s;
-    //     animation-timing-function: ease-in;
-    //     0% {background-color: rgb(4, 88, 31);}
-    //     50% {background-color: rgb(5, 83, 17); transform: scale(1, 1);}
-    //     75% {background-color: rgb(9, 76, 53); transform: rotate(4deg);}
-    //     75% {color: rgb(4, 86, 33)};
-    // }
-    
 }
