@@ -1,19 +1,31 @@
-.sectionContacto {
-    background-color: $background-primary-color;
-
+html {
+    min-height: 100%;
 }
+.container-fluid {
+    .sectionContacto {
+    background-color: $background-primary-color;
+    height: auto;
 
-.sectionContacto {
-    .formulario {
-        .boton_formulario {
-            @extend %btn_formulario;
+
+    #text-area {
+        width: auto;
+        height: 200px;
+    }
+    }
+
+    .section_c_imagen {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: $background-primary-color;
+        display: flex;
+        justify-content: center;
+
+        .imagenCuerpo {
+            width: 250px;
+            height: auto;
+
         }
     }
 }
 
-#text-area {
-    width: 300px;
-    height: 200px;
-}
 
-/* Contactos.html TERMINA*/

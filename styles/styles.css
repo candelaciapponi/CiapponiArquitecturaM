@@ -2,201 +2,6 @@ html {
   min-height: 100%;
 }
 
-@media (min-width: 768px) {
-  .containerIndex .articleIndex .indexCuerpo {
-    text-align: start;
-  }
-  .containerIndex .articleIndex .indexCuerpo .sideBar0 .sideBarText {
-    padding-top: 100px;
-    font-size: 1.1em;
-  }
-  .containerIndex .articleIndex .indexCuerpo .sideBar0 .sideBarText1 {
-    padding-top: 500px;
-    padding-bottom: 700px;
-    font-size: 1.1em;
-  }
-  .containerIndex .articleIndex .indexCuerpo .sideBar0 .sideBarText2 {
-    padding-top: 350px;
-    padding-bottom: 100px;
-    font-size: 1.1em;
-  }
-  .containerIndex .articleIndex .indexCuerpo .gif_cubo .cubo_imagen {
-    height: 450px;
-    width: 450px;
-  }
-  .containerIndex .sectionIndex {
-    padding-bottom: 250px;
-    padding-top: 150px;
-  }
-  .containerIndex .sectionIndex .descripIndex {
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 60px;
-  }
-  .containerIndex .sectionIndex .lineasDescrip {
-    padding-top: 100px;
-    padding-bottom: 150px;
-    color: rgba(240, 240, 240, 0.571);
-  }
-  .containerIndex .sectionIndex .lineasDescrip .descripTexto {
-    font-size: 1.9em;
-    line-height: 55px;
-  }
-  .containerIndex .sectionIndex .lineasDescrip .descripTexto2 {
-    font-size: 1.9em;
-    line-height: 55px;
-  }
-  .containerIndex .botonesDiv {
-    align-items: center;
-    background-color: rgb(0, 0, 0);
-    height: auto;
-    width: auto;
-    padding-top: 200px;
-    padding-bottom: 400px;
-  }
-  .containerIndex .botonesDiv .botonesArriba {
-    display: flex;
-    justify-content: space-evenly;
-    font-weight: bold;
-    height: 130px;
-    text-decoration: none;
-  }
-  .containerIndex .botonesDiv .botonesArriba #casasboton {
-    width: 120px;
-  }
-  .containerIndex .indexProductos {
-    padding-top: 400px;
-    padding-bottom: 300px;
-  }
-  .containerIndex .indexProductos .rowCards .col1Cards .cardOne {
-    width: 300px;
-    height: 300px;
-    background-color: rgb(2, 79, 2);
-  }
-  .containerIndex .indexProductos .rowCards .col1Cards .cardOne .primeraCardfoot {
-    font-size: 0.7rem;
-  }
-  .containerIndex .indexProductos .rowCards .col2Cards .cardTwo {
-    width: 300px;
-    height: 300px;
-    background-color: rgb(2, 79, 2);
-  }
-  .containerIndex .indexProductos .rowCards .col2Cards .cardTwo .segundaCardfoot {
-    color: pink;
-  }
-  .containerIndex .indexProductos .rowCards .col3Cards .cardThree {
-    width: 300px;
-    height: 300px;
-    background-color: rgb(2, 79, 2);
-  }
-  .containerIndex .indexProductos .rowCards .col3Cards .cardThree .terceraCardfoot {
-    color: pink;
-  }
-  .containerIndex .articleAbajo {
-    padding-bottom: 300px;
-    flex-direction: row;
-    align-items: center;
-  }
-  .containerIndex .articleAbajo .articleAbajo1 {
-    font-size: 1.2rem;
-    color: gray;
-  }
-  .containerIndex .articleAbajo .articleAbajo3 {
-    font-size: 1.2rem;
-    line-height: 40px;
-    color: gray;
-  }
-  .containerIndex .articleAbajo .lastImgIndex {
-    display: flex;
-    margin-left: 550px;
-    padding-top: 180px;
-    height: 400px;
-    width: 250px;
-  }
-}
-@media (min-width: 1200px) {
-  .containerIndex .articleIndex .indexCuerpo {
-    text-align: start;
-  }
-  .containerIndex .articleIndex .indexCuerpo .sideBar0 .sideBarText {
-    padding-top: 200px;
-    font-size: 1.1em;
-  }
-  .containerIndex .articleIndex .indexCuerpo .sideBar0 .sideBarText1 {
-    padding-top: 700px;
-    padding-bottom: 700px;
-    font-size: 1.1em;
-  }
-  .containerIndex .articleIndex .indexCuerpo .sideBar0 .sideBarText2 {
-    padding-top: 650px;
-    padding-bottom: 100px;
-    font-size: 1.1em;
-  }
-  .containerIndex .articleIndex .indexCuerpo .gif_cubo .cubo_imagen {
-    height: 450px;
-    width: 450px;
-  }
-  .containerIndex .sectionIndex {
-    padding-bottom: 250px;
-    padding-top: 150px;
-  }
-  .containerIndex .sectionIndex .descripIndex {
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 60px;
-  }
-  .containerIndex .sectionIndex .lineasDescrip {
-    padding-top: 100px;
-    padding-bottom: 150px;
-    color: rgba(240, 240, 240, 0.571);
-  }
-  .containerIndex .sectionIndex .lineasDescrip .descripTexto {
-    font-size: 1.9em;
-    line-height: 55px;
-  }
-  .containerIndex .sectionIndex .lineasDescrip .descripTexto2 {
-    font-size: 1.9em;
-    line-height: 55px;
-  }
-  .containerIndex .botonesDiv {
-    align-items: center;
-    background-color: rgb(0, 0, 0);
-    height: auto;
-    width: auto;
-    padding-top: 200px;
-    padding-bottom: 400px;
-  }
-  .containerIndex .botonesDiv .botonesArriba .btn1 {
-    font-size: 1.8rem;
-  }
-  .containerIndex .botonesDiv .botonesArriba #botoncasas {
-    width: 120px;
-  }
-  .containerIndex .botonesDiv .botonesAbajo .btn2 {
-    font-size: 1.6rem;
-  }
-  .containerIndex .articleAbajo {
-    padding-bottom: 300px;
-    flex-direction: row;
-    align-items: center;
-  }
-  .containerIndex .articleAbajo .articleAbajo1 {
-    font-size: 1.2rem;
-    color: gray;
-  }
-  .containerIndex .articleAbajo .articleAbajo3 {
-    font-size: 1.2rem;
-    line-height: 40px;
-    color: gray;
-  }
-  .containerIndex .articleAbajo .lastImgIndex {
-    display: flex;
-    margin-left: 550px;
-    padding-top: 180px;
-    height: 400px;
-    width: 250px;
-  }
-}
 .containerIndex .botonesDiv .botonesAbajo .btn2, .containerIndex .botonesDiv .botonesArriba .btn1 {
   padding-left: 10px;
   padding-right: 10px;
@@ -211,19 +16,6 @@ html {
 }
 
 .containerIndex .indexProductos .rowCards .col3Cards .cardThree .terceraCardfoot .btn_card, .containerIndex .indexProductos .rowCards .col2Cards .cardTwo .segundaCardfoot .btn_card, .containerIndex .indexProductos .rowCards .col1Cards .cardOne .primeraCardfoot .btn_card {
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 70px;
-  border-color: #777b3e;
-  width: auto;
-  height: auto;
-  font-size: 0.7rem;
-  display: inline;
-  justify-content: center;
-  align-items: center;
-}
-
-.sectionContacto .formulario .boton_formulario {
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 70px;
@@ -423,13 +215,15 @@ body {
   }
 }
 .footer {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   display: flex;
   justify-content: center;
   text-align: center;
   height: auto;
-  padding-top: 60px;
-  padding-bottom: 60px;
+}
+
+html {
+  min-height: 100%;
 }
 
 .containerIndex {
@@ -456,7 +250,7 @@ body {
 .containerIndex .articleIndex .indexCuerpo .sideBar0 {
   font-size: 1.4rem;
   color: rgb(119, 123, 62);
-  padding-bottom: 50px;
+  padding-bottom: 70px;
   padding-top: 70px;
 }
 .containerIndex .articleIndex .indexCuerpo .sideBar0 .sideBarText {
@@ -467,8 +261,9 @@ body {
   padding-bottom: 50px;
   padding-right: 10%;
 }
-.containerIndex .articleIndex .indexCuerpo .gif_cubo {
-  padding-top: 200px;
+.containerIndex .articleIndex .indexCuerpo #ahora {
+  width: 150px;
+  height: 150px;
 }
 .containerIndex .sectionIndex {
   background-color: rgb(0, 0, 0);
@@ -641,84 +436,276 @@ body {
   width: 175px;
 }
 
+@media (min-width: 768px) {
+  .containerIndex .articleIndex .indexCuerpo {
+    text-align: start;
+  }
+  .containerIndex .articleIndex .indexCuerpo .sideBar0 .sideBarText {
+    padding-top: 100px;
+    font-size: 1.1em;
+  }
+  .containerIndex .articleIndex .indexCuerpo .sideBar0 .sideBarText1 {
+    padding-top: 500px;
+    padding-bottom: 300px;
+    font-size: 1.1em;
+  }
+  .containerIndex .articleIndex .indexCuerpo .sideBar0 .sideBarText2 {
+    padding-top: 350px;
+    padding-bottom: 100px;
+    font-size: 1.1em;
+  }
+  .containerIndex .articleIndex .indexCuerpo .gif_cubo .cubo_imagen {
+    height: 450px;
+    width: 450px;
+  }
+  .containerIndex .sectionIndex {
+    padding-bottom: 250px;
+    padding-top: 150px;
+  }
+  .containerIndex .sectionIndex .descripIndex {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 60px;
+  }
+  .containerIndex .sectionIndex .lineasDescrip {
+    padding-top: 100px;
+    padding-bottom: 150px;
+    color: rgba(240, 240, 240, 0.571);
+  }
+  .containerIndex .sectionIndex .lineasDescrip .descripTexto {
+    font-size: 1.9em;
+    line-height: 55px;
+  }
+  .containerIndex .sectionIndex .lineasDescrip .descripTexto2 {
+    font-size: 1.9em;
+    line-height: 55px;
+  }
+  .containerIndex .botonesDiv {
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    height: auto;
+    width: auto;
+    padding-top: 200px;
+    padding-bottom: 400px;
+  }
+  .containerIndex .botonesDiv .botonesArriba {
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+    height: 130px;
+    text-decoration: none;
+  }
+  .containerIndex .botonesDiv .botonesArriba #casasboton {
+    width: 120px;
+  }
+  .containerIndex .indexProductos {
+    padding-top: 400px;
+    padding-bottom: 300px;
+  }
+  .containerIndex .indexProductos .rowCards .col1Cards .cardOne {
+    width: 300px;
+    height: 300px;
+  }
+  .containerIndex .indexProductos .rowCards .col1Cards .cardOne .primeraCardfoot {
+    font-size: 0.7rem;
+  }
+  .containerIndex .indexProductos .rowCards .col2Cards .cardTwo {
+    width: 300px;
+    height: 300px;
+  }
+  .containerIndex .indexProductos .col3Cards {
+    padding-top: 20px;
+  }
+  .containerIndex .indexProductos .col3Cards .cardThree {
+    width: 300px;
+    height: 300px;
+  }
+  .containerIndex .articleAbajo {
+    padding-bottom: 300px;
+    flex-direction: row;
+    align-items: center;
+  }
+  .containerIndex .articleAbajo .articleAbajo1 {
+    font-size: 1.2rem;
+    color: gray;
+  }
+  .containerIndex .articleAbajo .articleAbajo3 {
+    font-size: 1.2rem;
+    line-height: 40px;
+    color: gray;
+  }
+  .containerIndex .articleAbajo .lastImgIndex {
+    display: flex;
+    margin-left: 550px;
+    padding-top: 180px;
+    height: 400px;
+    width: 250px;
+  }
+}
+@media (min-width: 1200px) {
+  .containerIndex .articleIndex .indexCuerpo {
+    text-align: start;
+  }
+  .containerIndex .articleIndex .indexCuerpo .sideBar0 {
+    padding-bottom: 300px;
+  }
+  .containerIndex .articleIndex .indexCuerpo .sideBar0 .sideBarText {
+    padding-top: 200px;
+    font-size: 1.1em;
+  }
+  .containerIndex .articleIndex .indexCuerpo .sideBar0 .sideBarText1 {
+    padding-top: 700px;
+    padding-bottom: 300px;
+    font-size: 1.1em;
+  }
+  .containerIndex .articleIndex .indexCuerpo .sideBar0 .sideBarText2 {
+    padding-top: 350px;
+    padding-bottom: 100px;
+    font-size: 1.1em;
+  }
+  .containerIndex .articleIndex .indexCuerpo #ahora {
+    width: 300px;
+    height: 300px;
+  }
+  .containerIndex .sectionIndex .descripIndex {
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 60px;
+  }
+  .containerIndex .sectionIndex .lineasDescrip {
+    padding-top: 100px;
+    padding-bottom: 150px;
+    color: rgba(240, 240, 240, 0.571);
+  }
+  .containerIndex .sectionIndex .lineasDescrip .descripTexto {
+    font-size: 1.9em;
+    line-height: 55px;
+  }
+  .containerIndex .sectionIndex .lineasDescrip .descripTexto2 {
+    font-size: 1.9em;
+    line-height: 55px;
+  }
+  .containerIndex .botonesDiv {
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    height: auto;
+    width: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  .containerIndex .botonesDiv .botonesArriba .btn1 {
+    font-size: 1.4rem;
+  }
+  .containerIndex .botonesDiv .botonesArriba #botoncasas {
+    width: 140px;
+  }
+  .containerIndex .botonesDiv .botonesAbajo .btn2 {
+    font-size: 1.4rem;
+    width: auto;
+  }
+  .containerIndex .indexProductos {
+    padding-top: 200px;
+    padding-bottom: 300px;
+  }
+  .containerIndex .indexProductos .rowCards .col1Cards .cardOne {
+    width: 300px;
+    height: 300px;
+  }
+  .containerIndex .indexProductos .rowCards .col1Cards .cardOne .primeraCardfoot {
+    font-size: 0.8rem;
+  }
+  .containerIndex .indexProductos .rowCards .col2Cards .cardTwo {
+    width: 300px;
+    height: 300px;
+  }
+  .containerIndex .indexProductos .col3Cards {
+    padding-top: 20px;
+  }
+  .containerIndex .indexProductos .col3Cards .cardThree {
+    width: 300px;
+    height: 300px;
+  }
+  .containerIndex .articleAbajo {
+    padding-bottom: 300px;
+    flex-direction: row;
+    align-items: center;
+  }
+  .containerIndex .articleAbajo .articleAbajo1 {
+    font-size: 1.2rem;
+    color: gray;
+  }
+  .containerIndex .articleAbajo .articleAbajo2 {
+    width: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .containerIndex .articleAbajo .articleAbajo3 {
+    font-size: 1.2rem;
+    line-height: 40px;
+    color: gray;
+  }
+  .containerIndex .articleAbajo .lastImgIndex {
+    display: flex;
+    margin-left: 550px;
+    padding-top: 180px;
+    height: 400px;
+    width: 250px;
+  }
+}
 .articleDeptos {
   background-color: rgb(0, 0, 0);
 }
 .articleDeptos .container-fluid {
   width: 1100px;
-  height: autopx;
+  height: 600px;
 }
 .articleDeptos .container-fluid .tituloDeptos {
   display: flex;
-  justify-content: center;
+  justify-content: start;
+  font-size: 2rem;
 }
 
-.section_dto_uno {
+.section_deptos_uno {
   background-color: rgb(0, 0, 0);
-  padding-top: 100px;
 }
-.section_dto_uno .sideBar0 .lista_seccion {
+.section_deptos_uno .side_deptos {
   font-size: 1.4rem;
   text-align: center;
   color: rgb(119, 123, 62);
-  padding-bottom: 90px;
+  padding-top: 90px;
+  height: auto;
 }
-.section_dto_uno .imagenesCuerpo {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 50px;
-}
-.section_dto_uno .imagenesCuerpo .indexImg {
-  display: flex;
-  height: 200px;
-  width: 300px;
-}
-.section_dto_uno .sideBar0 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.section_dto_mid {
-  background-color: rgb(0, 0, 0);
-  padding-top: 80px;
-}
-.section_dto_mid .texto {
-  font-size: 1.3rem;
-  text-align: center;
-  justify-content: center;
-  line-height: 35px;
-}
-
-.gota {
-  background-color: rgb(0, 0, 0);
-  padding-top: 200px;
-}
-.gota .gota_medio {
-  display: flex;
-  justify-content: center;
-}
-
-.section_dto_dos {
-  padding-top: 200px;
+.section_deptos_uno .side_deptos .lista_seccion {
+  padding-top: 50px;
   padding-bottom: 100px;
-  background-color: rgb(0, 0, 0);
-  color: olive;
 }
-.section_dto_dos p {
-  padding-left: 20px;
-  padding-right: 20px;
-  text-align: center;
-  line-height: 50px;
-}
-.section_dto_dos .imagenesCuerpoDos {
-  padding-top: 80px;
+.section_deptos_uno .imagenesCuerpo {
+  padding-bottom: 200px;
   display: flex;
   justify-content: center;
 }
-.section_dto_dos .imagenesCuerpoDos .gif_uno {
-  width: 170px;
-  height: 220px;
+
+.section_casas_mid {
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+}
+.section_casas_mid .imagenesCuerpo2 {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.section_casas_dos {
+  background-color: rgb(0, 0, 0);
+}
+.section_casas_dos .article_casas_txt {
+  color: olive;
+  text-align: center;
+  padding-bottom: 100px;
+}
+.section_casas_dos .imagenesCuerpo3 {
+  padding-bottom: 200px;
+  display: flex;
+  justify-content: center;
 }
 
 .articleCasas {
@@ -850,16 +837,30 @@ body {
   padding-top: 100px;
 }
 
-.sectionContacto {
-  background-color: rgb(0, 0, 0);
+html {
+  min-height: 100%;
 }
 
-#text-area {
-  width: 300px;
+.container-fluid .sectionContacto {
+  background-color: rgb(0, 0, 0);
+  height: auto;
+}
+.container-fluid .sectionContacto #text-area {
+  width: auto;
   height: 200px;
 }
+.container-fluid .section_c_imagen {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+}
+.container-fluid .section_c_imagen .imagenCuerpo {
+  width: 250px;
+  height: auto;
+}
 
-/* Contactos.html TERMINA*/
 /*  quienesSomos.html COMIENZA*/
 .articleQuienes {
   display: flex;
