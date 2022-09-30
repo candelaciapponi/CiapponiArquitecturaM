@@ -1,5 +1,6 @@
-
-/*  quienesSomos.html COMIENZA*/
+html {
+    min-height: 100%;
+}
 
 .articleQuienes {
     display: flex;
@@ -48,11 +49,12 @@
     .main_imagen{
         display: flex;
         justify-content: center;
-        
-        .main_img {
-            width: 270px;
-            height: 200px;
+
+        #main_img {
+            width: 100%;        
+            height: auto;
         }
+
     }
 
     .side_quienes {        
@@ -63,8 +65,11 @@
 
     .imagenesCuerpo {
         padding-top: 100px;
+        display: flex;
+        justify-content: center;  
+        }
     }
-}
+
 
 
 .quienesImagen {
@@ -94,6 +99,5 @@
         }
     }
 }
-
 
 

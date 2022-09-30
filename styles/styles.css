@@ -74,8 +74,8 @@ body {
   padding-right: 10px;
   -webkit-animation-name: pbutton;
           animation-name: pbutton;
-  -webkit-animation-duration: 6s;
-          animation-duration: 6s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   -webkit-animation-timing-function: ease-in;
           animation-timing-function: ease-in;
 }
@@ -83,32 +83,48 @@ body {
   0% {
     background-color: rgb(4, 88, 31);
   }
+  25% {
+    background-color: rgb(8, 171, 60);
+    color: white;
+    transform: rotate(2deg);
+  }
   50% {
     background-color: rgb(5, 83, 17);
     transform: scale(1, 1);
-  }
-  75% {
-    background-color: rgb(9, 76, 53);
     transform: rotate(4deg);
   }
-  85% {
-    color: rgb(4, 86, 33);
+  75% {
+    background-color: rgb(29, 168, 119);
+    transform: scale(3, 3);
+    transform: rotate(4deg);
+  }
+  100% {
+    background-color: rgb(9, 76, 53);
+    transform: rotate(9deg);
   }
 }
 @keyframes pbutton {
   0% {
     background-color: rgb(4, 88, 31);
   }
+  25% {
+    background-color: rgb(8, 171, 60);
+    color: white;
+    transform: rotate(2deg);
+  }
   50% {
     background-color: rgb(5, 83, 17);
     transform: scale(1, 1);
-  }
-  75% {
-    background-color: rgb(9, 76, 53);
     transform: rotate(4deg);
   }
-  85% {
-    color: rgb(4, 86, 33);
+  75% {
+    background-color: rgb(29, 168, 119);
+    transform: scale(3, 3);
+    transform: rotate(4deg);
+  }
+  100% {
+    background-color: rgb(9, 76, 53);
+    transform: rotate(9deg);
   }
 }
 
@@ -150,32 +166,48 @@ body {
     0% {
       background-color: rgb(4, 88, 31);
     }
+    25% {
+      background-color: rgb(8, 171, 60);
+      color: white;
+      transform: rotate(2deg);
+    }
     50% {
       background-color: rgb(5, 83, 17);
       transform: scale(1, 1);
-    }
-    75% {
-      background-color: rgb(9, 76, 53);
       transform: rotate(4deg);
     }
-    85% {
-      color: rgb(4, 86, 33);
+    75% {
+      background-color: rgb(29, 168, 119);
+      transform: scale(3, 3);
+      transform: rotate(4deg);
+    }
+    100% {
+      background-color: rgb(9, 76, 53);
+      transform: rotate(9deg);
     }
   }
   @keyframes pbutton {
     0% {
       background-color: rgb(4, 88, 31);
     }
+    25% {
+      background-color: rgb(8, 171, 60);
+      color: white;
+      transform: rotate(2deg);
+    }
     50% {
       background-color: rgb(5, 83, 17);
       transform: scale(1, 1);
-    }
-    75% {
-      background-color: rgb(9, 76, 53);
       transform: rotate(4deg);
     }
-    85% {
-      color: rgb(4, 86, 33);
+    75% {
+      background-color: rgb(29, 168, 119);
+      transform: scale(3, 3);
+      transform: rotate(4deg);
+    }
+    100% {
+      background-color: rgb(9, 76, 53);
+      transform: rotate(9deg);
     }
   }
 }
@@ -255,7 +287,6 @@ html {
 }
 .containerIndex .articleIndex .indexCuerpo .sideBar0 .sideBarText {
   padding-bottom: 50px;
-  padding-right: 10%;
 }
 .containerIndex .articleIndex .indexCuerpo .sideBar0 .sideBarText1 {
   padding-bottom: 50px;
@@ -318,7 +349,7 @@ html {
 }
 .containerIndex .botonesDiv .botonesAbajo .btn2 {
   background-color: rgb(0, 0, 0);
-  width: 130px;
+  border-color: solid 8px rgb(46, 247, 69);
 }
 .containerIndex .botonesDiv .botonesAbajo .btn2 a {
   text-decoration: none;
@@ -402,6 +433,7 @@ html {
 .containerIndex .indexProductos .rowCards .col3Cards .cardThree .terceraCardfoot {
   color: rgb(3, 70, 3);
   display: flex;
+  font-size: 0.9rem;
   justify-content: space-around;
   align-items: center;
 }
@@ -435,6 +467,20 @@ html {
   height: 175px;
   width: 175px;
 }
+.containerIndex .ultimo_index {
+  display: flex;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.containerIndex .ultimo_index .ultima_linea {
+  color: rgb(119, 123, 62);
+}
+.containerIndex .ultimo_index .logos #logosx {
+  width: 70px;
+  height: 70px;
+}
 
 @media (min-width: 768px) {
   .containerIndex .articleIndex .indexCuerpo {
@@ -446,11 +492,11 @@ html {
   }
   .containerIndex .articleIndex .indexCuerpo .sideBar0 .sideBarText1 {
     padding-top: 500px;
-    padding-bottom: 300px;
+    padding-bottom: 250px;
     font-size: 1.1em;
   }
   .containerIndex .articleIndex .indexCuerpo .sideBar0 .sideBarText2 {
-    padding-top: 350px;
+    padding-top: 320px;
     padding-bottom: 100px;
     font-size: 1.1em;
   }
@@ -507,16 +553,13 @@ html {
     height: 300px;
   }
   .containerIndex .indexProductos .rowCards .col1Cards .cardOne .primeraCardfoot {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
   .containerIndex .indexProductos .rowCards .col2Cards .cardTwo {
     width: 300px;
     height: 300px;
   }
-  .containerIndex .indexProductos .col3Cards {
-    padding-top: 20px;
-  }
-  .containerIndex .indexProductos .col3Cards .cardThree {
+  .containerIndex .indexProductos .rowCards .col3Cards .cardThree {
     width: 300px;
     height: 300px;
   }
@@ -527,6 +570,7 @@ html {
   }
   .containerIndex .articleAbajo .articleAbajo1 {
     font-size: 1.2rem;
+    line-height: 40px;
     color: gray;
   }
   .containerIndex .articleAbajo .articleAbajo3 {
@@ -575,7 +619,6 @@ html {
   .containerIndex .sectionIndex .lineasDescrip {
     padding-top: 100px;
     padding-bottom: 150px;
-    color: rgba(240, 240, 240, 0.571);
   }
   .containerIndex .sectionIndex .lineasDescrip .descripTexto {
     font-size: 1.9em;
@@ -611,15 +654,9 @@ html {
     width: 300px;
     height: 300px;
   }
-  .containerIndex .indexProductos .rowCards .col1Cards .cardOne .primeraCardfoot {
-    font-size: 0.8rem;
-  }
   .containerIndex .indexProductos .rowCards .col2Cards .cardTwo {
     width: 300px;
     height: 300px;
-  }
-  .containerIndex .indexProductos .col3Cards {
-    padding-top: 20px;
   }
   .containerIndex .indexProductos .col3Cards .cardThree {
     width: 300px;
@@ -630,19 +667,10 @@ html {
     flex-direction: row;
     align-items: center;
   }
-  .containerIndex .articleAbajo .articleAbajo1 {
-    font-size: 1.2rem;
-    color: gray;
-  }
   .containerIndex .articleAbajo .articleAbajo2 {
     width: auto;
     padding-left: 50px;
     padding-right: 50px;
-  }
-  .containerIndex .articleAbajo .articleAbajo3 {
-    font-size: 1.2rem;
-    line-height: 40px;
-    color: gray;
   }
   .containerIndex .articleAbajo .lastImgIndex {
     display: flex;
@@ -652,12 +680,16 @@ html {
     width: 250px;
   }
 }
+html {
+  min-height: 100%;
+}
+
 .articleDeptos {
   background-color: rgb(0, 0, 0);
 }
 .articleDeptos .container-fluid {
   width: 1100px;
-  height: 600px;
+  height: auto;
 }
 .articleDeptos .container-fluid .tituloDeptos {
   display: flex;
@@ -680,9 +712,14 @@ html {
   padding-bottom: 100px;
 }
 .section_deptos_uno .imagenesCuerpo {
-  padding-bottom: 200px;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+.section_deptos_uno .imagenesCuerpo .depto_imagen {
+  padding-bottom: 200px;
+  height: 350px;
+  width: 200px;
 }
 
 .section_casas_mid {
@@ -707,13 +744,81 @@ html {
   display: flex;
   justify-content: center;
 }
+.section_casas_dos .imagenesCuerpo3 #gif_last {
+  height: 250px;
+  width: 120px;
+}
+
+@media (min-width: 768px) {
+  .articleDeptos {
+    background-color: rgb(0, 0, 0);
+  }
+  .articleDeptos .container-fluid {
+    width: 1100px;
+    height: auto;
+  }
+  .articleDeptos .container-fluid .tituloDeptos {
+    display: flex;
+    justify-content: start;
+    font-size: 2rem;
+  }
+  .section_deptos_uno {
+    background-color: rgb(0, 0, 0);
+  }
+  .section_deptos_uno .side_deptos {
+    font-size: 1.4rem;
+    text-align: center;
+    color: rgb(119, 123, 62);
+    padding-top: 90px;
+    height: auto;
+  }
+  .section_deptos_uno .side_deptos .lista_seccion {
+    padding-top: 50px;
+    padding-bottom: 300px;
+  }
+  .section_deptos_uno .imagenesCuerpo {
+    padding-bottom: 200px;
+    display: flex;
+    justify-content: center;
+  }
+  .section_deptos_uno .imagenesCuerpo .depto_imagen {
+    padding-bottom: 200px;
+    height: 500px;
+    width: 350px;
+  }
+  .section_casas_mid {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  .section_casas_mid .imagenesCuerpo2 {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  .section_casas_dos {
+    background-color: rgb(0, 0, 0);
+  }
+  .section_casas_dos .article_casas_txt {
+    color: olive;
+    text-align: center;
+    padding-bottom: 100px;
+  }
+  .section_casas_dos .imagenesCuerpo3 #gif_last {
+    height: 300px;
+    width: 180px;
+  }
+}
+html {
+  min-height: 100%;
+}
 
 .articleCasas {
   background-color: rgb(0, 0, 0);
 }
 .articleCasas .container-fluid {
   width: 1100px;
-  height: 600px;
+  height: auto;
 }
 .articleCasas .container-fluid .tituloCasas {
   display: flex;
@@ -724,18 +829,19 @@ html {
 .section_casas_uno {
   background-color: rgb(0, 0, 0);
 }
-.section_casas_uno .sideBar0 {
+.section_casas_uno .sideBar_casas {
+  padding-top: 100px;
   font-size: 1.4rem;
   text-align: center;
   color: rgb(119, 123, 62);
   padding-bottom: 90px;
 }
-.section_casas_uno .sideBar0 .lista_seccion {
+.section_casas_uno .sideBar_casas .lista_seccion {
   padding-top: 50px;
   padding-bottom: 100px;
 }
 .section_casas_uno .imagenesCuerpo {
-  padding-bottom: 200px;
+  padding-bottom: 150px;
   display: flex;
   justify-content: center;
 }
@@ -743,10 +849,14 @@ html {
 .section_casas_mid {
   background-color: rgb(0, 0, 0);
   text-align: center;
+  font-size: 1.3rem;
 }
 .section_casas_mid .imagenesCuerpo2 {
   padding-top: 200px;
   padding-bottom: 200px;
+}
+.section_casas_mid .imagenesCuerpo3 #ultimo_gif {
+  width: 200px;
 }
 
 .section_casas_dos {
@@ -758,9 +868,14 @@ html {
   padding-bottom: 100px;
 }
 .section_casas_dos .imagenesCuerpo3 {
+  padding-top: 200px;
   padding-bottom: 200px;
   display: flex;
   justify-content: center;
+}
+.section_casas_dos .imagenesCuerpo3 .ultimo_gif {
+  width: 250px;
+  height: 350px;
 }
 
 @media (min-width: 768px) {
@@ -784,7 +899,7 @@ html {
     justify-content: center;
   }
   .section_casas_mid {
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding-bottom: 200px;
   }
   .section_casas_mid .imagenesCuerpo2 {
@@ -803,12 +918,16 @@ html {
     display: flex;
     justify-content: center;
   }
-  .section_casas_dos .imagenesCuerpo3 .gif_uno {
+  .section_casas_dos .imagenesCuerpo3 .ultimo_gif {
     padding-top: 50px;
-    height: 300px;
+    height: 350px;
     width: 220px;
   }
 }
+html {
+  min-height: 100%;
+}
+
 .articleOtros {
   background-color: rgb(0, 0, 0);
 }
@@ -816,11 +935,8 @@ html {
   width: 1100px;
   height: auto;
 }
-.articleOtros .container-fluid .tituloOtros .text-end .blockquote {
-  font-size: 3em;
-}
 .articleOtros .container-fluid .tituloOtros .text-end .lead {
-  font-size: 1.2em;
+  font-size: 1.1em;
   color: #8d8d8a;
 }
 
@@ -828,15 +944,42 @@ html {
   background-color: black;
 }
 .section_ultima .section_txt {
-  padding-top: 300px;
+  padding-top: 200px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  color: olive;
+}
+.section_ultima .section_txt_abajo {
+  padding-top: 200px;
+  padding-bottom: 100px;
+  text-align: center;
 }
 .section_ultima .imagenesCuerpoDos {
   padding-top: 100px;
+  display: flex;
+  justify-content: center;
 }
 .section_ultima .imagenesCuerpoDos .gif_op {
   padding-top: 100px;
+  width: 200px;
 }
 
+@media (min-width: 1200px) {
+  .section_ultima .section_txt {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  .section_ultima .section_txt_abajo {
+    padding-top: 400px;
+    text-align: center;
+    padding-bottom: 300px;
+  }
+}
 html {
   min-height: 100%;
 }
@@ -861,7 +1004,10 @@ html {
   height: auto;
 }
 
-/*  quienesSomos.html COMIENZA*/
+html {
+  min-height: 100%;
+}
+
 .articleQuienes {
   display: flex;
   background-color: rgb(0, 0, 0);
@@ -904,9 +1050,9 @@ html {
   display: flex;
   justify-content: center;
 }
-.main_quienes .main_imagen .main_img {
-  width: 270px;
-  height: 200px;
+.main_quienes .main_imagen #main_img {
+  width: 100%;
+  height: auto;
 }
 .main_quienes .side_quienes {
   display: flex;
@@ -915,6 +1061,8 @@ html {
 }
 .main_quienes .imagenesCuerpo {
   padding-top: 100px;
+  display: flex;
+  justify-content: center;
 }
 
 .quienesImagen {
@@ -983,8 +1131,8 @@ body {
   padding-right: 10px;
   -webkit-animation-name: pbutton;
           animation-name: pbutton;
-  -webkit-animation-duration: 6s;
-          animation-duration: 6s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   -webkit-animation-timing-function: ease-in;
           animation-timing-function: ease-in;
 }
@@ -992,16 +1140,24 @@ body {
   0% {
     background-color: rgb(4, 88, 31);
   }
+  25% {
+    background-color: rgb(8, 171, 60);
+    color: white;
+    transform: rotate(2deg);
+  }
   50% {
     background-color: rgb(5, 83, 17);
     transform: scale(1, 1);
-  }
-  75% {
-    background-color: rgb(9, 76, 53);
     transform: rotate(4deg);
   }
-  85% {
-    color: rgb(4, 86, 33);
+  75% {
+    background-color: rgb(29, 168, 119);
+    transform: scale(3, 3);
+    transform: rotate(4deg);
+  }
+  100% {
+    background-color: rgb(9, 76, 53);
+    transform: rotate(9deg);
   }
 }
 
@@ -1043,32 +1199,48 @@ body {
     0% {
       background-color: rgb(4, 88, 31);
     }
+    25% {
+      background-color: rgb(8, 171, 60);
+      color: white;
+      transform: rotate(2deg);
+    }
     50% {
       background-color: rgb(5, 83, 17);
       transform: scale(1, 1);
-    }
-    75% {
-      background-color: rgb(9, 76, 53);
       transform: rotate(4deg);
     }
-    85% {
-      color: rgb(4, 86, 33);
+    75% {
+      background-color: rgb(29, 168, 119);
+      transform: scale(3, 3);
+      transform: rotate(4deg);
+    }
+    100% {
+      background-color: rgb(9, 76, 53);
+      transform: rotate(9deg);
     }
   }
   @keyframes pbutton {
     0% {
       background-color: rgb(4, 88, 31);
     }
+    25% {
+      background-color: rgb(8, 171, 60);
+      color: white;
+      transform: rotate(2deg);
+    }
     50% {
       background-color: rgb(5, 83, 17);
       transform: scale(1, 1);
-    }
-    75% {
-      background-color: rgb(9, 76, 53);
       transform: rotate(4deg);
     }
-    85% {
-      color: rgb(4, 86, 33);
+    75% {
+      background-color: rgb(29, 168, 119);
+      transform: scale(3, 3);
+      transform: rotate(4deg);
+    }
+    100% {
+      background-color: rgb(9, 76, 53);
+      transform: rotate(9deg);
     }
   }
 }/*# sourceMappingURL=styles.css.map */

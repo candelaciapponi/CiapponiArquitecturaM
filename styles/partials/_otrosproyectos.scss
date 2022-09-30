@@ -1,44 +1,76 @@
+html {
+    min-height: 100%;
+}
+
 .articleOtros {
     background-color: $background-primary-color;
     
-
     .container-fluid {
         width: 1100px;
         height: auto;
 
         .tituloOtros {
-            .text-end {
-                .blockquote {
-                    font-size: 3em;
-                }
-                
+            .text-end {    
                 .lead {
-                    font-size: 1.2em;
+                    font-size: 1.1em;
                     color: #8d8d8a;
                 }
             }
         }   
-
     }
 }
 
 .section_ultima {
     background-color: black;
     .section_txt {
-        padding-top: 300px;
+        padding-top: 200px;
+        padding-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;   
+        justify-content: center;
+        color: $font-index-ultima-sec;
+    }
+
+    .section_txt_abajo {
+        padding-top: 200px;
+        padding-bottom: 100px;
+        text-align: center; 
     }
 
     .imagenesCuerpoDos {
         padding-top: 100px;
+        display: flex;
+        justify-content: center;
 
         .gif_op {
             padding-top: 100px;
+            width: 200px;
+            
         }
 
     }
 }
     
 
+@media (min-width: 1200px) {
+    .section_ultima {
+        .section_txt {                
+            display: flex;
+            flex-direction: column;
+            text-align: center;   
+            justify-content: center;
+        }
+    }
+
+    .section_ultima {
+        .section_txt_abajo {
+            padding-top: 400px;
+            text-align: center;
+            padding-bottom: 300px;
+        }
+    }
+}
 
 
 

@@ -48,15 +48,16 @@ body {
         font-weight: bold;
         padding-right: 10px;
         animation-name: pbutton;
-        animation-duration: 6s;
+        animation-duration: 3s;
         animation-timing-function: ease-in;       
     }
 
     @keyframes pbutton {
         0% { background-color: rgb(4, 88, 31); }
-        50% { background-color: rgb(5, 83, 17); transform: scale(1, 1); }
-        75% { background-color: rgb(9, 76, 53); transform: rotate(4deg); }
-        85% { color: rgb(4, 86, 33); }                
+        25% { background-color: rgb(8, 171, 60); color:white; transform: rotate(2deg)}
+        50% { background-color: rgb(5, 83, 17); transform: scale(1, 1); transform: rotate(4deg); }
+        75% { background-color: rgb(29, 168, 119); transform: scale(3, 3); transform: rotate(4deg); }
+        100% { background-color: rgb(9, 76, 53); transform: rotate(9deg); }
     }
 }
 
@@ -98,9 +99,10 @@ body {
 
         @keyframes pbutton {
             0% { background-color: rgb(4, 88, 31); }
-            50% { background-color: rgb(5, 83, 17); transform: scale(1, 1); }
-            75% { background-color: rgb(9, 76, 53); transform: rotate(4deg); }
-            85% { color: rgb(4, 86, 33); }                
+            25% { background-color: rgb(8, 171, 60); color:white; transform: rotate(2deg)}
+            50% { background-color: rgb(5, 83, 17); transform: scale(1, 1); transform: rotate(4deg); }
+            75% { background-color: rgb(29, 168, 119); transform: scale(3, 3); transform: rotate(4deg); }
+            100% { background-color: rgb(9, 76, 53); transform: rotate(9deg); }
         }
     }
 }

@@ -37,7 +37,6 @@ html {
         
                 .sideBarText {
                     padding-bottom: 50px;                
-                    padding-right: 10%;             
                 }    
                 
                 .sideBarText1 {
@@ -76,7 +75,6 @@ html {
         .lineasDescrip {
             font-size: 1.1em;
             line-height: 30px;
-
         }
     }
     
@@ -106,14 +104,13 @@ html {
                     color: $index_button_font_color;                 }
 
                 &:hover {
-                    color: black;
+                    color: $font_color_btn_index;
                     background-color: $index_btn_bg_color_hover;
                 }     
                
             }     
         
         }
-
 
         .botonesAbajo {
             display: flex;
@@ -126,19 +123,17 @@ html {
             .btn2 {
                 @extend %botonBase; 
                 background-color: $index_button_bg_color;
-                width: 130px;
+                border-color: $border-color;
 
                 a {
                     text-decoration: none;  
                     color: $index_button_font_color;                 }
 
                 &:hover {
-                    color: black;
+                    color: $font_color_btn_index;
                     background-color: $index_btn_bg_color_hover;
-                }                    
-            }
-            
-            
+                }     
+            }   
         }
     }
    
@@ -149,9 +144,9 @@ html {
                 height: auto;
                 padding-bottom: 20px;
 
-                .cardOne {
-                    color:black;
-                    background-color: #b3ba56;
+                .cardOne {         
+                    color: $font_color_txt_cuerpo_cards;
+                    background-color: #b3ba56;           
                     .card-body {
                         font-size: 0.8rem;
                         line-height: 25px;
@@ -176,16 +171,16 @@ html {
                         .btn_card {
                             @extend %btn_card; 
                         }
-                    }
-                    
+                    }                    
                 }   
             }
+
             .col2Cards {
                 height: auto;
                 padding-bottom: 20px;
 
                 .cardTwo {
-                    color:black;
+                    color: $font_color_txt_cuerpo_cards;
                     background-color: #b3ba56;
                     .card-body {
                         font-size: 0.8rem;
@@ -194,7 +189,6 @@ html {
                             font-size: 1rem;
                         }
                     }
-
 
                     .card-img-top {
                         height: 250px;
@@ -218,10 +212,10 @@ html {
             .col3Cards {
                 height: auto;
                 padding-bottom: 20px;
-                    .cardThree {
-                    color:black;
-                    background-color: #b3ba56;
 
+                .cardThree {
+                    color: $font_color_txt_cuerpo_cards;
+                    background-color: #b3ba56;
                     .card-body {
                         font-size: 0.8rem;
                         line-height: 25px;
@@ -230,7 +224,6 @@ html {
                         }
                     }
 
-
                     .card-img-top {
                         height: 250px;
                         width: 100%;
@@ -238,16 +231,17 @@ html {
 
                     .terceraCardfoot {
                         color: rgb(3, 70, 3);
-                        display: flex;                            
+                        display: flex;  
+                        font-size: 0.9rem;                          
                         justify-content: space-around;
                         align-items: center;
 
                         .btn_card {
                             @extend %btn_card; 
                         }
-                    }
+                    }                
                 }
-            }            
+            }           
         }       
     }
 
@@ -286,6 +280,25 @@ html {
             }                                              
         }
     }     
+
+    .ultimo_index {
+        display: flex;        
+        align-content: center;
+        text-align: center;                       
+        justify-content: center;
+        padding-bottom: 50px;
+
+        .ultima_linea {
+            color: $font-terciary-color;
+        }
+
+        .logos {    
+            #logosx {
+                width: 70px;
+                height: 70px;
+            }        
+        }
+    }
 }
 
 
@@ -306,12 +319,12 @@ html {
 
                     .sideBarText1 {
                         padding-top: 500px;
-                        padding-bottom: 300px;
+                        padding-bottom: 250px;
                         font-size: 1.1em;
                     } 
                     
                     .sideBarText2 {
-                        padding-top: 350px;
+                        padding-top: 320px;
                         padding-bottom: 100px;
                         font-size: 1.1em;
                     }       
@@ -374,12 +387,6 @@ html {
                 }
             }
         }
-    
-        
-    
-         
-
-
 
         .indexProductos {
             padding-top: 400px;
@@ -390,26 +397,25 @@ html {
                         width: 300px;
                         height: 300px;
                         .primeraCardfoot {
-                            font-size: 0.7rem;
+                            font-size: 0.8rem;
                         }
                     }   
                 }
-
                 .col2Cards {
                     .cardTwo {
                         width: 300px;
                         height: 300px;
                         }
                     }
-                }   
+                  
                 .col3Cards {
-                    padding-top: 20px;
                     .cardThree {
                         width: 300px;
                         height: 300px;
                     }
                 }            
-        }       
+            }       
+        }
     
 
         .articleAbajo {
@@ -418,15 +424,13 @@ html {
             align-items: center;
 
             .articleAbajo1 {
-                font-size: 1.2rem;
-                color: gray;
+                @include articleAbajo3;
+
             }
 
 
             .articleAbajo3 {
-                font-size: 1.2rem;
-                line-height: 40px;
-                color: gray;
+                @include articleAbajo3;
             }
     
             .lastImgIndex {
@@ -439,6 +443,7 @@ html {
         }    
     }    
 }
+
 
 
 
@@ -479,8 +484,7 @@ html {
             }
         } 
 
-        .sectionIndex {                        
-            
+        .sectionIndex {                                    
             .descripIndex {
                 text-align: center;
                 padding-top: 150px;
@@ -490,7 +494,6 @@ html {
             .lineasDescrip {
                 padding-top: 100px;
                 padding-bottom: 150px;
-                color: rgba(240, 240, 240, 0.571);
                 .descripTexto {                    
                     font-size: 1.9em;
                     line-height: 55px;
@@ -537,9 +540,6 @@ html {
                     .cardOne {
                         width: 300px;
                         height: 300px;
-                        .primeraCardfoot {
-                            font-size: 0.8rem;
-                        }
                     }   
                 }
 
@@ -551,7 +551,6 @@ html {
                     }
                 }   
                 .col3Cards {
-                    padding-top: 20px;
                     .cardThree {
                         width: 300px;
                         height: 300px;
@@ -564,11 +563,6 @@ html {
             padding-bottom: 300px;
             flex-direction: row;
             align-items: center;
-
-            .articleAbajo1 {
-                font-size: 1.2rem;
-                color: gray;
-            }
             
             .articleAbajo2 {
                 width: auto;
@@ -576,13 +570,6 @@ html {
                 padding-right: 50px;
             }
 
-
-            .articleAbajo3 {
-                font-size: 1.2rem;
-                line-height: 40px;
-                color: gray;
-            }
-    
             .lastImgIndex {
                 display: flex;
                 margin-left: 550px;
@@ -593,4 +580,3 @@ html {
         }    
     }
 }   
-
